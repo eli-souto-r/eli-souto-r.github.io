@@ -346,10 +346,10 @@
                     <a class="Contacto-a" href="mailto:correo@gmial.com"><img class="Contacto-img" src="img/icon-email.svg" alt="">correo@gmail.com</a>
                 </section>
                 <form class="Contacto-form" action="https://formspree.io/f/mdovkvpj" method="post">
-                    <input class="Contacto-input" type="text" placeholder="Nombre*" required>
-                    <input class="Contacto-input" type="email" placeholder="Email*" required>
-                    <input class="Contacto-input" type="text" placeholder="Asunto*" required>
-                    <textarea class="Contacto-textarea" placeholder="Mensaje*" cols="30" rows="10" required></textarea>
+                    <input class="Contacto-input" type="text" placeholder="Nombre*" required name="nombre">
+                    <input class="Contacto-input" type="email" placeholder="Email*" required name="email">
+                    <input class="Contacto-input" type="text" placeholder="Asunto*" required name="asunto">
+                    <textarea class="Contacto-textarea" placeholder="Mensaje*" cols="30" rows="10" required name="mensaje"></textarea>
                     <input class="Contacto-input--enviar" id="btn--enviar" type="submit" value="Enviar">
                 </form>
                 <button id="cerrar" class="Contacto-cerrar">x</button>
