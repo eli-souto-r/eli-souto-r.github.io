@@ -28,6 +28,27 @@
 
     <!-- Icono de la pestaña (favicon)-->
     <link rel="icon" type="imagen/x-icon" href="img/marca-2.svg">
+    <script>
+        (function (m, a, z, e) {
+          var s, t;
+          try {
+            t = m.sessionStorage.getItem('maze-us');
+          } catch (err) {}
+        
+          if (!t) {
+            t = new Date().getTime();
+            try {
+              m.sessionStorage.setItem('maze-us', t);
+            } catch (err) {}
+          }
+        
+          s = a.createElement('script');
+          s.src = z + '?t=' + t + '&apiKey=' + e;
+          s.async = true;
+          a.getElementsByTagName('head')[0].appendChild(s);
+          m.mazeUniversalSnippetApiKey = e;
+        })(window, document, 'https://snippet.maze.co/maze-universal-loader.js', '5def16af-0225-4908-a22b-eb1dea83dfb8');
+    </script>
 </head>
 
 <body>
