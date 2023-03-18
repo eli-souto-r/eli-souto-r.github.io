@@ -1,15 +1,15 @@
 // Boton despelegar menu
-document.querySelector(".btn--menu").addEventListener("click", animateBars);
+document.querySelector(".Header-btn").addEventListener("click", animateBars);
 
-var line1__bars = document.querySelector(".line1--btn-menu");
-var line2__bars = document.querySelector(".line2--btn-menu");
-var line3__bars = document.querySelector(".line3--btn-menu");
-var menu = document.querySelector(".menu");
+var line1__bars = document.querySelector(".Header-line1");
+var line2__bars = document.querySelector(".Header-line2");
+var line3__bars = document.querySelector(".Header-line3");
+var menu = document.querySelector(".Header-nav");
 
 function animateBars(){
-    line1__bars.classList.toggle("activeline1--btn-menu");
-    line2__bars.classList.toggle("activeline2--btn-menu");
-    line3__bars.classList.toggle("activeline3--btn-menu");
+    line1__bars.classList.toggle("Header-line--line1");
+    line2__bars.classList.toggle("Header-line--line2");
+    line3__bars.classList.toggle("Header-line--line3");
     menu.classList.toggle("active")
 }
 
@@ -53,7 +53,3 @@ cerrarButton.onclick = function(){
     contContacto.style.display="flex";
     
 }
-
-//Carusel de los proyectos
-const contImgsCrusel    = document.querySelector('.cont--imgs--carusel')
-const punto    = document.querySelectorAll('.punto')
