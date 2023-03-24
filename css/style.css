@@ -6,7 +6,6 @@ body{
     font-size: var(--size-principal);
     transition: .3s ease all;
     font-weight: 400;
-    width: 100%;
 }
 
 /* Variables */
