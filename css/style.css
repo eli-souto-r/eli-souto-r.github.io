@@ -41,7 +41,7 @@ body{
     border-bottom: .25em solid var(--color-principal);
     background-color: var(--color-principal);
     position: sticky;
-    top:0em;
+    top:-0em;
     z-index:100;
     color:#fff;   
 }
