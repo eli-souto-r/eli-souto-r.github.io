@@ -41,7 +41,7 @@ body{
     border-bottom: .25em solid var(--color-principal);
     background-color: var(--color-principal);
     position: sticky;
-    top:-0em;
+    top:0px;
     z-index:100;
     color:#fff;   
 }
@@ -488,6 +488,7 @@ color: #1f1d22;
 }
 .Footer-a{
     margin: 1.25em;
+    text-align: center;
 }
 .Footer-a:hover{
     color: var(--color-principal);
