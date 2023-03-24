@@ -6,7 +6,7 @@ body{
     font-size: var(--size-principal);
     transition: .3s ease all;
     font-weight: 400;
-    width: auto;
+    width: 100%;
 }
 
 /* Variables */
@@ -33,7 +33,7 @@ body{
 /* Header */
 
 .Header{
-    width: 100%;
+    width: auto;
     height: 7.25em;
     min-height: 7.25em;
     display: flex;
