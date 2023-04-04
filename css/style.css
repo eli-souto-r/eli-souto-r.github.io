@@ -629,11 +629,11 @@ color: #1f1d22;
         margin-right: 0em;
     }
 
-    /*.Contacto-block{
+    .Contacto-block{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }*/
+    }
 
     .Contacto-form {
         margin-left: 0em;
