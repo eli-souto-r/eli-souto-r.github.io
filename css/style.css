@@ -630,7 +630,6 @@ color: #1f1d22;
     }
 
     .Contacto-block{
-        display: none;
         flex-direction: column;
         justify-content: center;
         align-items: center;
