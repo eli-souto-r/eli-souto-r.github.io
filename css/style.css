@@ -29,11 +29,6 @@ body{
     --animation: animation--bar 2s alternate ease-out;
 }
 
-html, body {
-    max-width: 100% !important;
-    overflow-x: hidden !important;
-}
-
 /* Header */
 
 .Header{
@@ -725,4 +720,9 @@ body.dark {
     color: #ffffffbe;
     border-color: #ffffffbe;
     font-size: 28px;
+}
+
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
 }
