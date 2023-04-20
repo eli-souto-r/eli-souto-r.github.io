@@ -217,6 +217,7 @@ body{
     align-items: center;
     flex-direction: column;
     height: 100vh;
+    padding: 5em;
 }
 .Inicio-logo{
 margin-bottom: 1.8em;
