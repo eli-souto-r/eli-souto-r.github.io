@@ -171,7 +171,7 @@ body{
     align-items: center;
 }
 .Redes--top{
-    position: absolute;
+    position: relative;
     right: 1.8em;
     top: 9.5em;
 }
