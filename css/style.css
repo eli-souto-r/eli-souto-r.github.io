@@ -212,8 +212,6 @@ body{
 
 /* Sección inicio */
 .Inicio{
-    margin-top:0em;
-    align-items: flex-end;
     justify-content: center;
     height: 100vh;
 }
