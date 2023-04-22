@@ -172,8 +172,8 @@ body{
 }
 .Redes--top{
     position: absolute;
-    right: 10px;
-    top: 30px;
+    right: 20px;
+    top: 136px;
 }
 .Redes-svg{
     fill: var(--color-text);
