@@ -173,7 +173,7 @@ body{
 .Redes--top{
     position: absolute;
     right: 20px;
-    top: 136px;
+    top: 126px;
 }
 .Redes-svg{
     fill: var(--color-text);
@@ -216,7 +216,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 70vh;
+    height: 80vh;
     
 }
 .Inicio-logo{
