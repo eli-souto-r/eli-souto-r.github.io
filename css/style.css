@@ -213,8 +213,6 @@ body{
 /* Sección inicio */
 .Inicio{
     margin-top:0em;
-    padding-botom: 7em;
-    align-items: flex-end;
     height: 100vh;
 }
 .Inicio-cont{
