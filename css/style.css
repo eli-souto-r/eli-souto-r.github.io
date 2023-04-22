@@ -596,6 +596,7 @@ color: #1f1d22;
 
 @media screen and (max-width:768px) {
 
+    main
     .Trayectoria-formacion,
     .Trayectoria-experiencia {
         flex-wrap: wrap;
