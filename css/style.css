@@ -211,12 +211,14 @@ body{
 }
 
 /* Sección inicio */
+.Inicio{
+    height: 100vh;
+}
 .Inicio-cont{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 80vh;
     
 }
 .Inicio-logo{
