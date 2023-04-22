@@ -510,15 +510,14 @@ color: #1f1d22;
 @media screen and (max-width:1380px) {
     .Section {
         width: 80%;
-        display: flex;
-        align-items: center;
-        margin:0em;
     }
 
     .Sobremi {
         width: 50%;
     }
-
+    .Main{
+        marging:auto;
+    }
 }
 
 @media screen and (max-width:940px) {
@@ -596,7 +595,9 @@ color: #1f1d22;
 
 @media screen and (max-width:768px) {
 
-    main
+    .Main{
+        margin: auto;
+    }
     .Trayectoria-formacion,
     .Trayectoria-experiencia {
         flex-wrap: wrap;
