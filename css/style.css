@@ -171,9 +171,9 @@ body{
     align-items: center;
 }
 .Redes--top{
-    position: relative;
-    right: 1.8em;
-    top: 9.5em;
+    position: absolute;
+    right: 10px;
+    top: 30px;
 }
 .Redes-svg{
     fill: var(--color-text);
