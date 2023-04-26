@@ -661,7 +661,7 @@ color: #1f1d22;
     .Inicio-btns {
         flex-wrap: wrap;
         flex-direction: row;
-        width: 100%;
+        width: 90%;
     }
 
     .Inicio-a {
