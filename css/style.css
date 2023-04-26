@@ -660,7 +660,7 @@ color: #1f1d22;
 @media screen and (max-width:600px) {
     .Inicio-btns {
         flex-wrap: wrap;
-        width: 98%;
+        width: 100%;
         justify-content: space-between;
     }
 
