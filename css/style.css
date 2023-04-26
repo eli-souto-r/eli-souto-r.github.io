@@ -451,6 +451,7 @@ color: #1f1d22;
     border-radius: .9em;
     color: #ffff;
     font-size: 1em;
+    cursor: pointer;
 }
 .Contacto-input--enviar:hover {
     background-color: transparent;
@@ -659,6 +660,7 @@ color: #1f1d22;
 @media screen and (max-width:600px) {
     .Inicio-btns {
         flex-wrap: wrap;
+        flex-direction: row;
     }
 
     .Inicio-a {
