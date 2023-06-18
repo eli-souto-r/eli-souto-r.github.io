@@ -448,7 +448,7 @@ body {
 
 .Slider {
     position: relative;
-    width: 900px;
+    width: 800px;
     height: 600px;
     background-color: #fff;
     padding: 20px;
@@ -470,9 +470,13 @@ body {
 
 }
 .Slider-btns {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     display: flex;
-    justify-content: center;
-    margin-top: 10px;
+    justify-content: space-between;
+    left: 10px;
+    right: 10px;
 }
 
 .Slider-btn {
@@ -775,6 +779,26 @@ body {
     .Header-h1 {
         font-size: var(--size-subapartado);
     }
+
+    /*slider*/
+    .Slider {
+        width: 100%;
+        height: auto;
+      }
+      
+      .Slider-cont {
+        height: 70%;
+      }
+      
+      .Slider-track {
+        white-space: initial;
+      }
+      
+      .Slider-img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
 }
 
 @media screen and (max-width:708px) {
