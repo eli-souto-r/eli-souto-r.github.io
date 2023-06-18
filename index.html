@@ -28,27 +28,6 @@
 
     <!-- Icono de la pestaña (favicon)-->
     <link rel="icon" type="imagen/x-icon" href="img/marca-2.svg">
-    <script>
-        (function (m, a, z, e) {
-          var s, t;
-          try {
-            t = m.sessionStorage.getItem('maze-us');
-          } catch (err) {}
-        
-          if (!t) {
-            t = new Date().getTime();
-            try {
-              m.sessionStorage.setItem('maze-us', t);
-            } catch (err) {}
-          }
-        
-          s = a.createElement('script');
-          s.src = z + '?t=' + t + '&apiKey=' + e;
-          s.async = true;
-          a.getElementsByTagName('head')[0].appendChild(s);
-          m.mazeUniversalSnippetApiKey = e;
-        })(window, document, 'https://snippet.maze.co/maze-universal-loader.js', '5def16af-0225-4908-a22b-eb1dea83dfb8');
-    </script>
 </head>
 
 <body>
@@ -286,19 +265,23 @@
             </div>
         </section>
 
-    <!--Galería de imágenes-->
-        <!--<div class="Cont--carusel" id="cont--carusel">
-            <div class="Galeria">
-                <img class="Galeria-imagen" src="img/keigobrand/imagen1.png">
-                <img class="Galeria-imagen" src="img/keigobrand/imagen2.png">
-                <img class="Galeria-imagen" src="img/keigobrand/imagen3.png">
-                <div class="Galeria-btns">
-                    <button class="Galeria-btn" onclick="previousImage()"><</button>
-                    <button class="Galeria-btn" onclick="nextImage()">></button>
+
+    <div class="Cont--carusel" id="cont--carusel">
+            <div class="Slider">
+                <button class="Cerrar--carusel">&times;</button>
+                <div class="slider">
+                    <div class="slider-track">
+                        <img class="Slider-img" src="img/dama-img2.png" alt="Imagen 1">
+                        <img class="Slider-img" src="img/dama-img3.png" alt="Imagen 2">
+                        <img class="Slider-img" src="img/dama-img4.png" alt="Imagen 3">
+                    </div>
                 </div>
-                <button class="cerrar--carusel">X</button>
+                <div class="Slider-btns">
+                    <button class="Slider-btn" onclick="previousImage()">&lt;</button>
+                    <button class="Slider-btn" onclick="nextImage()">&gt;</button>
+                </div>
             </div>
-        </div>-->
+        </div>
 
         <section class="Section Proyectos--diseñografico">
             <h3 class="Section-h3 Proyectos-h3">Diseño gráfico</h3>
