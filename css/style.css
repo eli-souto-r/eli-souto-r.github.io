@@ -372,7 +372,37 @@ color: #1f1d22;
     margin: .6em;
     text-align: center;
 }
-
+/*Slider*/
+.Cont--carusel{
+    position: absolute;
+    width: 90vw;
+    z-index: 999;
+    background-color: #1e000096;
+    overflow: hidden;
+}
+.slider{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+.slider-track {
+    display: flex;
+    width: 400px;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+  }
+.Slider-img{
+    width: 100%;
+    height: auto;
+}
+.Slider-btns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  .Slider-btn {
+    cursor: pointer;
+  }
 /* Sección contacto */
     /*inicio btn contacto*/
     .Contacto-btn{

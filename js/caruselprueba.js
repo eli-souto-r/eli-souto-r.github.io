@@ -1,31 +1,26 @@
-//const contImgsCrusel    = document.querySelector('.cont--imgs--carusel')
-//const punto    = document.querySelectorAll('.punto')
+const sliderContainer = document.querySelector('.slider');
+const track = document.querySelector('.slider-track');
+const slides = Array.from(track.children);
+const prevBtn = document.querySelector('.Slider-btn:nth-child(1)');
+const nextBtn = document.querySelector('.Slider-btn:nth-child(2)');
 
-var imagenes = [
-    "imagen1.png",
-    "imagen2.png",
-    "imagen3.png",
-    "imagen4.png"
-]
+let slideWidth = slides[0].getBoundingClientRect().width;
 
-var contador = 0;
+// Ajustar el ancho de las imágenes al tamaño del contenedor
+slides.forEach((slide) => {
+  slide.style.width = `${slideWidth}px`;
+});
 
-function mostrarImagen(imagen) {
-    document.getElementById("Galeria-imagen").src = imagen;
-}
+// Posicionar las imágenes en línea
+track.style.width = `${slideWidth * slides.length}px`;
 
-function retrocederImagen() {
-    contador--;
-    if (contador < 0) {
-        contador = imagenes.length - 1;
-    }
-    mostrarImagen(imagenes[contador]);
-}
+// Función para desplazar el slider
+const moveSlide = (direction) => {
+  const currentTranslate = track.style.transform ? parseInt(track.style.transform.match(/(-?\d+)/)[1]) : 0;
+  const moveAmount = direction * slideWidth;
+  track.style.transform = `translateX(${currentTranslate + moveAmount}px)`;
+};
 
-function avanzarImagen() {
-    contador++;
-    if (contador >= imagenes.length) {
-        contador = 0;
-    }
-    mostrarImagen(imagenes[contador]);
-}
+// Eventos de clic
+prevBtn.addEventListener('click', () => moveSlide(1));
+nextBtn.addEventListener('click', () => moveSlide(-1));
