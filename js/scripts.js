@@ -57,7 +57,7 @@ cerrarButton.onclick = function(){
 //Slider proyectos
 const btnLeft = document.querySelector(".btn-left"),
         btnRight = document.querySelector(".btn-right"),
-        slider = document.querySelector("#slider"),
+        slider = document.querySelector(".slider"),
         sliderSection = document.querySelectorAll(".slider-section");
 
 btnLeft.addEventListener("click", e => moveToLeft())
