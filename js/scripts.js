@@ -72,14 +72,14 @@ function moveToRight( ) {
         counter = 0
         operacion = 0
         slider.style.transform = `translate(-${operacion}%)`;
-    } else{
-        counter++;
+        slider.style.transition = "none"
+        return;
+    } 
 
+        counter++;
         operacion = operacion + widthIm
         slider.style.transform = `translate(-${operacion}%)`;
         slider.style.transition = "all ease .6s"
-    }
-    
 
 }
 
@@ -89,12 +89,13 @@ function moveToLeft( ) {
         counter = sliderSection.length-1;
         operacion = widthIm * (sliderSection.length-1)
         slider.style.transform = `translate(-${operacion}%)`;
-    } else{
-        counter++;
+        slider.style.transition = "none"
+        return;
+    }
 
+        counter++;
         operacion = operacion - widthIm
         slider.style.transform = `translate(-${operacion}%)`;
         slider.style.transition = "all ease .6s"
-    }
-    
+
 }
