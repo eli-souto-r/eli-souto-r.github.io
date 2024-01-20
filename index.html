@@ -20,7 +20,7 @@
     <!--link scripts-->
     <script defer src="js/dark-mod.js"></script>
     <script defer src="js/scripts.js"></script>
-    <script defer src="js/caruselprueba.js"></script>
+    <script defer src="js/carusel24.js"></script>
     <!-- Google analiticks -->
     <!--[if IE]>
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -276,85 +276,86 @@
         </section>
 
         <!--Caruserl-->
-        <div class="Cont--carusel" id="cont--carusel">
-            <div class="Slider">
-                <button class="Cerrar--carusel">&times;</button>
-                <div class="Slider-cont">
-                    <div class="Slider-track">
-                        <img class="Slider-img" src="img/dama-img2.png" alt="Imagen 1" data-id="1">
-                        <img class="Slider-img" src="img/dama-img3.png" alt="Imagen 2" data-id="2">
-                        <img class="Slider-img" src="img/dama-img4.png" alt="Imagen 3" data-id="3">
-                        <img class="Slider-img" src="img/dama-img1.png" alt="Imagen 2" data-id="4">
-                    </div>
+        <div class="body-carousel">
+            <div class="container-carousel">
+                <div class="carruseles" id="slider">
+                    <section class="slider-section">
+                        <img src="img/dama-img1.png">
+                    </section>
+                    <section class="slider-section">
+                        <img src="img/dama-img2.png">
+                    </section>
+                    <section class="slider-section">
+                        <img src="img/dama-img3.png">
+                    </section>
                 </div>
-                <div class="Slider-btns">
-                    <button class=".Slider-btn slider-prev-btn" onclick="previousImage()">&lt;</button>
-                    <button class=".Slider-btn slider-next-btn" onclick="nextImage()">&gt;</button>
-                </div>
+                <div class="btn-left"> < </div>
+                <div class="btn-right"> > </div>
             </div>
         </div>
 
-        <section class="Section Proyectos--diseñografico">
-            <h3 class="Section-h3 Proyectos-h3">Diseño gráfico</h3>
-            <div class="Proyectos-cont">
-                <section class="Proyectos-proyecto">
-                    <div class="Proyectos-div">
-                        <img class="Proyectos-img" src="" alt="">
-                    </div>
-                    <h5 class="Proyectos-h5">Cubierta libro</h5>
-                    <p class="Proyectos-p">Para una tarea de clase y para usar en en el futuro, realice este diseño de
-                        cubierta
-                        dirrigida a
-                        desarrolladores.</p>
-                </section>
-                <section class="Proyectos-proyecto">
-                    <div class="Proyectos-div">
-                        <img class="Proyectos-img" src="" alt="">
-                    </div>
-                    <h5 class="Proyectos-h5">Proyecto</h5>
-                    <p class="Proyectos-p">Lorem ipsum dolor sit amet, dolor consectetuer adipiscing elit. Aenean
-                        commodo ligula eget.
-                    </p>
-                </section>
-                <section class="Proyectos-proyecto">
-                    <div class="Proyectos-div">
-                        <img class="Proyectos-img" src="" alt="">
-                    </div>
-                    <h5 class="Proyectos-h5">Proyecto</h5>
-                    <p class="Proyectos-p">Lorem ipsum dolor sit amet, dolor consectetuer adipiscing elit. Aenean
-                        commodo ligula eget.
-                    </p>
-                </section>
-            </div>
-        </section>
+            <section class="Section Proyectos--diseñografico">
+                <h3 class="Section-h3 Proyectos-h3">Diseño gráfico</h3>
+                <div class="Proyectos-cont">
+                    <section class="Proyectos-proyecto">
+                        <div class="Proyectos-div">
+                            <img class="Proyectos-img" src="" alt="">
+                        </div>
+                        <h5 class="Proyectos-h5">Cubierta libro</h5>
+                        <p class="Proyectos-p">Para una tarea de clase y para usar en en el futuro, realice este diseño
+                            de
+                            cubierta
+                            dirrigida a
+                            desarrolladores.</p>
+                    </section>
+                    <section class="Proyectos-proyecto">
+                        <div class="Proyectos-div">
+                            <img class="Proyectos-img" src="" alt="">
+                        </div>
+                        <h5 class="Proyectos-h5">Proyecto</h5>
+                        <p class="Proyectos-p">Lorem ipsum dolor sit amet, dolor consectetuer adipiscing elit. Aenean
+                            commodo ligula eget.
+                        </p>
+                    </section>
+                    <section class="Proyectos-proyecto">
+                        <div class="Proyectos-div">
+                            <img class="Proyectos-img" src="" alt="">
+                        </div>
+                        <h5 class="Proyectos-h5">Proyecto</h5>
+                        <p class="Proyectos-p">Lorem ipsum dolor sit amet, dolor consectetuer adipiscing elit. Aenean
+                            commodo ligula eget.
+                        </p>
+                    </section>
+                </div>
+            </section>
 
-        <section id="contacto" class="Section Contacto">
-            <div id="cont--abrir" class="Contacto-btn">
-                <h3 id="abrir" class="Contacto-h3--btn">Contáctame</h3>
-            </div>
-            <div id="block--contact" class="Contacto-block">
-                <section class="Contacto-text">
-                    <h3 class="Contacto-h3">Contáctame</h3>
-                    <p class="Contacto-p">Si quieres contactar conmigo, en caso de que te interese contratar mis
-                        servicios. Puedes
-                        hacerlo
-                        tanto en el formulario que encuentras a continuación como en el email de abajo. <br>Un
-                        saludo
-                        Eli</p>
-                    <a class="Contacto-a" href="mailto:correo@gmial.com"><img class="Contacto-img"
-                            src="img/icon-email.svg" alt="">correo@gmail.com</a>
-                </section>
-                <form class="Contacto-form" action="https://formspree.io/f/mdovkvpj" method="post">
-                    <input class="Contacto-input" type="text" placeholder="Nombre*" required name="nombre">
-                    <input class="Contacto-input" type="email" placeholder="Email*" required name="email">
-                    <input class="Contacto-input" type="text" placeholder="Asunto*" required name="asunto">
-                    <textarea class="Contacto-textarea" placeholder="Mensaje*" cols="30" rows="10" required
-                        name="mensaje"></textarea>
-                    <input class="Contacto-input--enviar" id="btn--enviar" type="submit" value="Enviar">
-                </form>
-                <button id="cerrar" class="Contacto-cerrar">x</button>
-            </div>
-        </section>
+            <section id="contacto" class="Section Contacto">
+                <div id="cont--abrir" class="Contacto-btn">
+                    <h3 id="abrir" class="Contacto-h3--btn">Contáctame</h3>
+                </div>
+                <div id="block--contact" class="Contacto-block">
+                    <section class="Contacto-text">
+                        <h3 class="Contacto-h3">Contáctame</h3>
+                        <p class="Contacto-p">Si quieres contactar conmigo, en caso de que te interese contratar mis
+                            servicios. Puedes
+                            hacerlo
+                            tanto en el formulario que encuentras a continuación como en el email de abajo. <br>Un
+                            saludo
+                            Eli</p>
+                        <a class="Contacto-a" href="mailto:correo@gmial.com"><img class="Contacto-img"
+                                src="img/icon-email.svg" alt="">correo@gmail.com</a>
+                    </section>
+                    <form class="Contacto-form" action="https://formspree.io/f/mdovkvpj" method="post">
+                        <input class="Contacto-input" type="text" placeholder="Nombre*" required name="nombre">
+                        <input class="Contacto-input" type="email" placeholder="Email*" required name="email">
+                        <input class="Contacto-input" type="text" placeholder="Asunto*" required name="asunto">
+                        <textarea class="Contacto-textarea" placeholder="Mensaje*" cols="30" rows="10" required
+                            name="mensaje"></textarea>
+                        <input class="Contacto-input--enviar" id="btn--enviar" type="submit" value="Enviar">
+                    </form>
+                    <button id="cerrar" class="Contacto-cerrar">x</button>
+                </div>
+            </section>
     </main>
 
     <footer class="Footer">
