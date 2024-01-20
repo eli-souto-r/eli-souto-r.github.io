@@ -456,7 +456,7 @@ body {
     height: 500px;
     box-shadow: 0em 0em 2em 0em var(--color-principal);
     border-radius: 2em;
-    
+    overflow: hidden;
 }
 .carruseles{
     width: 300%;
