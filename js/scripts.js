@@ -249,9 +249,15 @@ const proyect1 = document.querySelector(".body-carusel_1"),
 //botones popups
 
 const popupPDF = document.querySelector(".popup-pdf"),
-    btnMIC = document.querySelector(".btn-mic");
+    btnMIC = document.querySelector(".btn-mic"),
+    popupDiario = document.querySelector(".popup-diario"),
+    popupVideo = document.querySelector(".popup-video"),
+    btnVideo = document.querySelector(".btn-video"),
+    btnDiario = document.querySelector(".btn-diario");
 
     btnMIC.addEventListener("click", e => activePopup1())
+    btnDiario.addEventListener("click", e => activePopup2())
+    btnVideo.addEventListener("click", e => activePopup3())
 
     function activePopup1() {
         popupPDF.style.display = 'flex';
@@ -259,6 +265,28 @@ const popupPDF = document.querySelector(".popup-pdf"),
     
         popupPDF.onclick = function () {
                 popupPDF.style.display = 'none';
+                document.body.classList.remove('no-scroll');
+            
+        };
+    }
+
+    function activePopup3() {
+        popupVideo.style.display = 'flex';
+        document.body.classList.add('no-scroll');
+    
+        popupVideo.onclick = function () {
+                popupVideo.style.display = 'none';
+                document.body.classList.remove('no-scroll');
+            
+        };
+
+    }
+    function activePopup2() {
+        popupDiario.style.display = 'flex';
+        document.body.classList.add('no-scroll');
+    
+        popupDiario.onclick = function () {
+            popupDiario.style.display = 'none';
                 document.body.classList.remove('no-scroll');
             
         };

@@ -428,6 +428,7 @@ body {
     margin: .9em 0em 2em 0em;
     overflow: hidden;
     cursor: pointer;
+    object-fit: cover;
 }
 .Proyectos-div:hover {
     scale: 105%;
@@ -435,6 +436,7 @@ body {
 }
 .Proyectos-img{
     width: 500em;
+    object-fit: cover;
 }
 
 .Proyectos-h5 {
@@ -447,7 +449,7 @@ body {
     text-align: center;
 }
 /*popup pdf*/
-.popup-pdf{
+.popup{
     position: fixed;
     z-index: 999;
     top: 0em;
