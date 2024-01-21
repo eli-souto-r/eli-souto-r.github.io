@@ -483,16 +483,15 @@ body {
 }
 
 /*Caruseles con mas imagenes*/
-.carruseles_2{
+.carruseles_2, .carruseles_1{
     width: 400%;
     height: 100%;
     display: flex;
 }
-.slider-section_2{
+.slider-section_2, .slider-section_1{
     width: cal(100% / 4);
     height: 100%;
 }
-
 /*Cierre caruseles con mas imagenes*/
 .slider-section img{
     width: 600px;
