@@ -158,7 +158,7 @@ const proyect1 = document.querySelector(".body-carusel_1"),
     proyect4 = document.querySelector(".body-carusel_4"),
     proyect5 = document.querySelector(".body-carusel_5"),
     proyect6 = document.querySelector(".body-carusel_6"),
-    btnCerrar = document.querySelector(".btn-cerrar"),
+    
     proyecto1Img = document.querySelector("#proyecto-div_1"),
     proyecto2Img = document.querySelector("#proyecto-div_2"),
     proyecto3Img = document.querySelector("#proyecto-div_3"),
@@ -245,3 +245,21 @@ const proyect1 = document.querySelector(".body-carusel_1"),
         };
     }
     
+
+//botones popups
+
+const popupPDF = document.querySelector(".popup-pdf"),
+    btnMIC = document.querySelector(".btn-mic");
+
+    btnMIC.addEventListener("click", e => activePopup1())
+
+    function activePopup1() {
+        popupPDF.style.display = 'flex';
+        document.body.classList.add('no-scroll');
+    
+        popupPDF.onclick = function () {
+                popupPDF.style.display = 'none';
+                document.body.classList.remove('no-scroll');
+            
+        };
+    }
