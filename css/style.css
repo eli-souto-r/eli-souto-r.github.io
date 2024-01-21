@@ -513,6 +513,10 @@ body {
     cursor: pointer;
     z-index: 101;
 }
+.no-scroll {
+    overflow: hidden;
+}
+
 /* Sección contacto */
 /*inicio btn contacto*/
 .Contacto-btn {

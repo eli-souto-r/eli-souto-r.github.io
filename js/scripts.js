@@ -175,19 +175,23 @@ const proyect1 = document.querySelector(".body-carusel_1"),
 
     function activeProyect1() {
         proyect1.style.display = 'flex';
+        document.body.classList.add('no-scroll');
     
         proyect1.onclick = function (e) {
             if (e.target === proyect1) {
                 proyect1.style.display = 'none';
+                document.body.classList.remove('no-scroll');
             }
         };
     }
     function activeProyect2() {
         proyect2.style.display = 'flex';
+        document.body.classList.add('no-scroll');
     
         proyect2.onclick = function (e) {
             if (e.target === proyect2) {
                 proyect2.style.display = 'none';
+                document.body.classList.remove('no-scroll');
             }
         };
     }
@@ -195,40 +199,48 @@ const proyect1 = document.querySelector(".body-carusel_1"),
 
     function activeProyect3() {
         proyect3.style.display = 'flex';
+        document.body.classList.add('no-scroll');
     
         proyect3.onclick = function (e) {
             if (e.target === proyect3) {
                 proyect3.style.display = 'none';
+                document.body.classList.remove('no-scroll');
             }
         };
     }
     
     function activeProyect4() {
         proyect4.style.display = 'flex';
+        document.body.classList.add('no-scroll');
     
         proyect4.onclick = function (e) {
             if (e.target === proyect4) {
                 proyect4.style.display = 'none';
+                document.body.classList.remove('no-scroll');
             }
         };
     }
     
     function activeProyect5() {
         proyect5.style.display = 'flex';
+        document.body.classList.add('no-scroll');
     
         proyect5.onclick = function (e) {
             if (e.target === proyect5) {
                 proyect5.style.display = 'none';
+                document.body.classList.remove('no-scroll');
             }
         };
     }
     
     function activeProyect6() {
         proyect6.style.display = 'flex';
+        document.body.classList.add('no-scroll');
     
         proyect6.onclick = function (e) {
             if (e.target === proyect6) {
                 proyect6.style.display = 'none';
+                document.body.classList.remove('no-scroll');
             }
         };
     }
