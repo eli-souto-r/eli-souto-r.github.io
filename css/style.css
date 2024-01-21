@@ -425,6 +425,10 @@ body {
     border-radius: 0.37em;
     background-color: #5f5f5f;
     margin: .9em 0em 2em 0em;
+    overflow: hidden;
+}
+.Proyectos-img{
+    width: 500em;
 }
 
 .Proyectos-h5 {
