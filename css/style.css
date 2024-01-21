@@ -423,9 +423,14 @@ body {
     width: 22.4em;
     height: 16.8em;
     border-radius: 0.37em;
-    background-color: #5f5f5f;
+    background-color: #ececec;
     margin: .9em 0em 2em 0em;
     overflow: hidden;
+    cursor: pointer;
+}
+.Proyectos-div:hover {
+    scale: 105%;
+    box-shadow:1em 1em 2em -.5em var(--color-principal) ;
 }
 .Proyectos-img{
     width: 500em;
@@ -466,6 +471,7 @@ body {
     border-radius: 2em;
     overflow: hidden;
 }
+
 .carruseles{
     width: 300%;
     height: 100%;
@@ -475,8 +481,21 @@ body {
     width: cal(100% / 3);
     height: 100%;
 }
+
+/*Caruseles con mas imagenes*/
+.carruseles_2{
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+.slider-section_2{
+    width: cal(100% / 4);
+    height: 100%;
+}
+
+/*Cierre caruseles con mas imagenes*/
 .slider-section img{
-    width: 100%;
+    width: 600px;
     height: 100%;
     object-fit: cover;
     border-radius: 2em;
@@ -694,7 +713,7 @@ body {
     }
 
     .Main {
-        widht: 100vh;
+        width: 100vh; /*comprobar que no dañe nada antes estaba sin funcionar*/
     }
 }
 
