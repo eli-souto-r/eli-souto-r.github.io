@@ -749,7 +749,7 @@ body {
     }
 
     .Main {
-        width: 100vh; /*comprobar que no dañe nada antes estaba sin funcionar*/
+        width:; /*comprobar que no dañe nada antes estaba sin funcionar*/
     }
 }
 
