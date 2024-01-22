@@ -434,6 +434,14 @@ body {
     scale: 105%;
     box-shadow:1em 1em 2em -.5em var(--color-principal) ;
 }
+
+/*Quita estilos env los que no tienen interacion img*/
+.Proyecto-div_6:hover, .Proyecto-div-web_3:hover{
+    scale: 100%;
+    box-shadow:none;
+    cursor: auto;
+}
+/*---------------------*/
 .Proyectos-img{
     width: 500em;
     object-fit: cover;
