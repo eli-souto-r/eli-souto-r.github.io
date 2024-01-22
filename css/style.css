@@ -436,7 +436,7 @@ body {
 }
 
 /*Quita estilos env los que no tienen interacion img*/
-.Proyecto-div_6:hover, .Proyecto-div-web_3:hover{
+.Proyecto-div-web_3:hover{
     scale: 100%;
     box-shadow:none;
     cursor: auto;
