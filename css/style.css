@@ -546,10 +546,14 @@ body {
     padding: 5px;
     font-weight: 600;
     cursor: pointer;
-    color: #d9d9d9c5;
+    color: #8f0606c5;
     transform: translate(0, -50%);
     transition: .5s ease;
     user-select: none;
+}
+.btn-left:hover, .btn-right:hover{
+    background-color: #ff0000c5;
+    color: #d9d9d9c5;
 }
 .btn-left{
     left: .625em;
