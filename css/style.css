@@ -748,9 +748,6 @@ body {
         width: 50%;
     }
 
-    .Main {
-        width:; /*comprobar que no dañe nada antes estaba sin funcionar*/
-    }
 }
 
 @media screen and (max-width:940px) {
