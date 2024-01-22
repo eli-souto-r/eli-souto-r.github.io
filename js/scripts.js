@@ -233,7 +233,7 @@ const proyect1 = document.querySelector(".body-carusel_1"),
         };
     }
     
-    /*function activeProyect6() {
+    function activeProyect6() {
         proyect6.style.display = 'flex';
         document.body.classList.add('no-scroll');
     
@@ -243,7 +243,7 @@ const proyect1 = document.querySelector(".body-carusel_1"),
                 document.body.classList.remove('no-scroll');
             }
         };
-    }*/
+    }
     
 
 //botones popups
