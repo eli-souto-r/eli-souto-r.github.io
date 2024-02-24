@@ -6,6 +6,7 @@ body {
     font-size: var(--size-principal);
     transition: .3s ease all;
     font-weight: 400;
+    position: relative;
 }
 
 /* Variables */
@@ -199,8 +200,8 @@ body {
 
 .Redes--top {
     position: absolute;
-    right: 2%;
-    top: 15%;
+    right: 1.5em;
+    top: 9em;
 }
 
 .Redes-svg {
