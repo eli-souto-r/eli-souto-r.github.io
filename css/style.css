@@ -192,7 +192,9 @@ body {
 
 /* Redes */
 .Cont{
-    width: auto;
+    width: 100%;
+    position: relative;
+    z-index: 80;
 }
 .Redes {
     display: flex;
@@ -205,7 +207,7 @@ body {
     position: absolute;
     right: 1.5em;
     top: 9em;
-    align-items: flex-end;
+
 }
 
 .Redes-svg {
