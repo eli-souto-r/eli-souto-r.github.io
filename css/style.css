@@ -190,14 +190,6 @@ body {
 }
 
 /* Redes */
-.Cont{
-    width: 100%;
-    position: relative;
-    z-index: 80;
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 3%;
-}
 .Redes {
     display: flex;
     flex-direction: column;
@@ -208,6 +200,7 @@ body {
 .Redes--top {
     position: absolute;
     top: 9em;
+    right: 1.5em;
 
 }
 
@@ -225,8 +218,8 @@ body {
 /* Ajustes específicos para dispositivos Apple */
 @media only screen and (max-device-width: 1024px) {
     .Redes--top {
-        top: 6em;
-        right: 1.5em; /* Ajusta según sea necesario para dispositivos Apple */
+        top: 9em;
+        right: 1em; /* Ajusta según sea necesario para dispositivos Apple */
     }
 }
 /* Main-contenido principal */
