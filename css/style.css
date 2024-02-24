@@ -6,7 +6,6 @@ body {
     font-size: var(--size-principal);
     transition: .3s ease all;
     font-weight: 400;
-    position: relative;
 }
 
 /* Variables */
@@ -290,7 +289,9 @@ body {
     font-size: var(--size-mayor);
     margin-top: 2em;
 }
-
+.btns{
+    width: 100%;
+}
 .Inicio-a, .btn {
     display: flex;
     align-items: center;
