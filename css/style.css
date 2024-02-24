@@ -202,9 +202,7 @@ body {
     position: absolute;
     right: 1.5em;
     top: 9em;
-    -webkit-position: absolute;
-    -webkit-right: 1.5em;
-    -webkit-top: 9em;
+    align-items: flex-end;
 }
 
 .Redes-svg {
