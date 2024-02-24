@@ -222,7 +222,13 @@ body {
 .Redes-a {
     margin: .625em 0em;
 }
-
+/* Ajustes específicos para dispositivos Apple */
+@media only screen and (max-device-width: 1024px) {
+    .Redes--top {
+        top: 6em;
+        right: 1.5em; /* Ajusta según sea necesario para dispositivos Apple */
+    }
+}
 /* Main-contenido principal */
 .Main {
     display: flex;
