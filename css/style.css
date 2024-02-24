@@ -196,7 +196,7 @@ body {
     z-index: 80;
     display: flex;
     justify-content: flex-end;
-    padding-right: 24px;
+    padding-right: 3%;
 }
 .Redes {
     display: flex;
