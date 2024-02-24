@@ -194,6 +194,9 @@ body {
     width: 100%;
     position: relative;
     z-index: 80;
+    display: flex;
+    justify-content: flex-end;
+    
 }
 .Redes {
     display: flex;
