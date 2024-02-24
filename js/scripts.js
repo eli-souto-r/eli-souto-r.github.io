@@ -259,16 +259,6 @@ const popupPDF = document.querySelector(".popup-pdf"),
     btnDiario.addEventListener("click", e => activePopup2())
     btnVideo.addEventListener("click", e => activePopup3())
 
-    function activePopup1() {
-        popupPDF.style.display = 'flex';
-        document.body.classList.add('no-scroll');
-    
-        popupPDF.onclick = function () {
-                popupPDF.style.display = 'none';
-                document.body.classList.remove('no-scroll');
-            
-        };
-    }
 
     function activePopup3() {
         popupVideo.style.display = 'flex';
@@ -280,14 +270,4 @@ const popupPDF = document.querySelector(".popup-pdf"),
             
         };
 
-    }
-    function activePopup2() {
-        popupDiario.style.display = 'flex';
-        document.body.classList.add('no-scroll');
-    
-        popupDiario.onclick = function () {
-            popupDiario.style.display = 'none';
-                document.body.classList.remove('no-scroll');
-            
-        };
     }
