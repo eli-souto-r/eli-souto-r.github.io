@@ -219,7 +219,7 @@ body {
 @media only screen and (max-device-width: 1024px) {
     .Redes--top {
         top: 9em;
-        right: 1em; /* Ajusta según sea necesario para dispositivos Apple */
+        right: .9em; /* Ajusta según sea necesario para dispositivos Apple */
     }
 }
 /* Main-contenido principal */
@@ -228,6 +228,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .Section {
@@ -732,10 +733,6 @@ body {
 .Footer-redes {
     display: flex;
     flex-direction: row;
-}
-
-.Footer-redes>.Redes-a {
-    margin: 1.25em;
 }
 
 .Footer-links {
