@@ -447,7 +447,7 @@ body {
     object-fit: cover;
 }
 
-.Proyectos-h5 {
+.Proyectos-h4 {
     color: var(--color-principal);
     font-size: var(--size-proyectos-menu);
 }
