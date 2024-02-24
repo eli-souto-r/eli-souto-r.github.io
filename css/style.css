@@ -191,6 +191,9 @@ body {
 }
 
 /* Redes */
+.Cont{
+    width: auto;
+}
 .Redes {
     display: flex;
     flex-direction: column;
