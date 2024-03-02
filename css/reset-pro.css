@@ -158,7 +158,7 @@ td {
     border-spacing: 0;
 }
 
-/* Evitamos problemas con los SVG *meda va eror con posicionamiento absoluto**/
+/* Evitamos problemas con los SVG *meda va error con posicionamiento absoluto en ios**/
 svg {
     /*width: 100%;*/
     display: block;
