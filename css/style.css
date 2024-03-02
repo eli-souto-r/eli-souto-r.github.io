@@ -42,7 +42,7 @@ body {
     background-color: var(--color-principal);
     position: fixed;
     /*position: sticky;
-    top:0px;*/
+    top:0rem;*/
     z-index: 100;
     color: #fff;
 }
@@ -101,13 +101,13 @@ body {
 
 .Header-a:before {
     opacity: 0;
-    transform: translateY(-12px);
+    transform: translateY(-0.75rem);
     transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s;
 }
 
 .Header-a:after {
     opacity: 0;
-    transform: translateY(8px);
+    transform: translateY(.5rem);
     transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
 }
 
@@ -177,7 +177,7 @@ body {
 }
 
 .Header-line--line1 {
-    transform: rotate(45deg) translate(-2px, 1px);
+    transform: rotate(45deg) translate(-0.125rem, .0625rem);
 }
 
 .Header-line--line2 {
@@ -186,7 +186,7 @@ body {
 }
 
 .Header-line--line3 {
-    transform: rotate(-45deg) translate(-4px, 2px);
+    transform: rotate(-45deg) translate(-0.25rem, .125rem);
 }
 
 /* Redes */
@@ -199,8 +199,8 @@ body {
 
 .Redes--top {
     position: absolute;
-    top: 10.625rem;
-    right: 1.875rem;
+    top: 9em;
+    right: 1.5em;
 
 }
 
@@ -215,13 +215,6 @@ body {
 .Redes-a {
     margin: .625em 0em;
 }
-/* Ajustes específicos para dispositivos Apple */
-/* @media only screen and (max-device-width: 64rem) {
-    .Redes--top {
-        top: 9em;
-        right: .9em; /* Ajusta según sea necesario para dispositivos Apple 
-    } 
-} */
 
 /* Main-contenido principal */
 .Main {
@@ -377,10 +370,13 @@ body {
 }
 
 .Trayectoria-h4 {
-    cursor: pointer;
+    cursor:default;
     margin: 0em .3em;
 }
-
+.Trayectoria__hover:hover{
+    cursor: pointer;
+    scale: 1.1;
+}
 .Trayectoria-formacion,
 .Trayectoria-experiencia {
     display: flex;
@@ -505,8 +501,8 @@ body {
 
 .container-carousel{
     position: relative;
-    width: 600px;
-    height: 500px;
+    width: 37.5rem;
+    height: 31.25rem;
     box-shadow: 0em 0em 2em 0em var(--color-principal);
     border-radius: 2em;
     overflow: hidden;
@@ -552,7 +548,7 @@ body {
 }
 /*Cierre caruseles con mas imagenes*/
 .slider-section img{
-    width: 600px;
+    width: 37.5rem;
     height: 100%;
     object-fit: cover;
     border-radius: 2em;
@@ -564,7 +560,7 @@ body {
     font-size: 1.5em;
     background-color: transparent;
     border-radius:  50%;
-    padding: 5px;
+    padding: .3125rem;
     font-weight: 600;
     cursor: pointer;
     color: #8f0606c5;
@@ -589,7 +585,7 @@ body {
     font-size: 1.5em;
     background-color: transparent;
     border-radius:  50%;
-    padding: 5px;
+    padding: .3125rem;
     color:#ff0000c5;
     transition: .5s ease;
     user-select: none;
@@ -742,7 +738,7 @@ body {
 }
 
 .Footer-a {
-    margin: 20px;
+    margin: 1.25em;
     text-align: center;
 }
 
@@ -759,7 +755,7 @@ body {
 
 /*responsive-adaptacion a dispositivos*/
 
-@media screen and (max-width:1380px) {
+@media screen and (max-width:86.25rem) {
     .Section {
         width: 80%;
     }
@@ -770,7 +766,7 @@ body {
 
 }
 
-@media screen and (max-width:940px) {
+@media screen and (max-width:58.75rem) {
 
     .Section {
         width: 90%;
@@ -847,7 +843,7 @@ body {
 
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:48rem) {
 
     .Main {
         margin: auto;
@@ -861,7 +857,7 @@ body {
     .block {
         display: block;
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
     }
 
     .Contacto-form {
@@ -910,7 +906,7 @@ body {
       }
 }
 
-@media screen and (max-width:708px) {
+@media screen and (max-width:44.25rem) {
     .Contacto-text {
         min-width: 80%;
         padding: 0em;
@@ -933,7 +929,7 @@ body {
     }
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:31.25rem) {
     .Header{
         padding:5%;
     }
@@ -1029,7 +1025,7 @@ body.dark {
 #cont--abrir.dark>h3:hover {
     color: #ffffffbe;
     border-color: #ffffffbe;
-    font-size: 28px;
+    font-size: 1.75rem;
 }
 
 /*html, body {
