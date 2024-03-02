@@ -42,7 +42,7 @@ body {
     background-color: var(--color-principal);
     position: fixed;
     /*position: sticky;
-    top:0rem;*/
+    top:0px;*/
     z-index: 100;
     color: #fff;
 }
@@ -101,13 +101,13 @@ body {
 
 .Header-a:before {
     opacity: 0;
-    transform: translateY(-0.75rem);
+    transform: translateY(-12px);
     transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s;
 }
 
 .Header-a:after {
     opacity: 0;
-    transform: translateY(.5rem);
+    transform: translateY(8px);
     transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
 }
 
@@ -177,7 +177,7 @@ body {
 }
 
 .Header-line--line1 {
-    transform: rotate(45deg) translate(-0.125rem, .0625rem);
+    transform: rotate(45deg) translate(-2px, 1px);
 }
 
 .Header-line--line2 {
@@ -186,7 +186,7 @@ body {
 }
 
 .Header-line--line3 {
-    transform: rotate(-45deg) translate(-0.25rem, .125rem);
+    transform: rotate(-45deg) translate(-4px, 2px);
 }
 
 /* Redes */
@@ -199,8 +199,8 @@ body {
 
 .Redes--top {
     position: absolute;
-    top: 9em;
-    right: 1.5em;
+    top: 10.625rem;
+    right: 1.875rem;
 
 }
 
@@ -216,12 +216,13 @@ body {
     margin: .625em 0em;
 }
 /* Ajustes específicos para dispositivos Apple */
-@media only screen and (max-device-width: 1024px) {
+/* @media only screen and (max-device-width: 64rem) {
     .Redes--top {
         top: 9em;
-        right: .9em; /* Ajusta según sea necesario para dispositivos Apple */
-    }
-}
+        right: .9em; /* Ajusta según sea necesario para dispositivos Apple 
+    } 
+} */
+
 /* Main-contenido principal */
 .Main {
     display: flex;
@@ -504,8 +505,8 @@ body {
 
 .container-carousel{
     position: relative;
-    width: 37.5rem;
-    height: 31.25rem;
+    width: 600px;
+    height: 500px;
     box-shadow: 0em 0em 2em 0em var(--color-principal);
     border-radius: 2em;
     overflow: hidden;
@@ -551,7 +552,7 @@ body {
 }
 /*Cierre caruseles con mas imagenes*/
 .slider-section img{
-    width: 37.5rem;
+    width: 600px;
     height: 100%;
     object-fit: cover;
     border-radius: 2em;
@@ -563,7 +564,7 @@ body {
     font-size: 1.5em;
     background-color: transparent;
     border-radius:  50%;
-    padding: .3125rem;
+    padding: 5px;
     font-weight: 600;
     cursor: pointer;
     color: #8f0606c5;
@@ -588,7 +589,7 @@ body {
     font-size: 1.5em;
     background-color: transparent;
     border-radius:  50%;
-    padding: .3125rem;
+    padding: 5px;
     color:#ff0000c5;
     transition: .5s ease;
     user-select: none;
@@ -741,7 +742,7 @@ body {
 }
 
 .Footer-a {
-    margin: 1.25em;
+    margin: 20px;
     text-align: center;
 }
 
@@ -758,7 +759,7 @@ body {
 
 /*responsive-adaptacion a dispositivos*/
 
-@media screen and (max-width:86.25rem) {
+@media screen and (max-width:1380px) {
     .Section {
         width: 80%;
     }
@@ -769,7 +770,7 @@ body {
 
 }
 
-@media screen and (max-width:58.75rem) {
+@media screen and (max-width:940px) {
 
     .Section {
         width: 90%;
@@ -846,7 +847,7 @@ body {
 
 }
 
-@media screen and (max-width:48rem) {
+@media screen and (max-width:768px) {
 
     .Main {
         margin: auto;
@@ -860,7 +861,7 @@ body {
     .block {
         display: block;
         width: 100%;
-        margin-bottom: 1.25rem;
+        margin-bottom: 20px;
     }
 
     .Contacto-form {
@@ -909,7 +910,7 @@ body {
       }
 }
 
-@media screen and (max-width:44.25rem) {
+@media screen and (max-width:708px) {
     .Contacto-text {
         min-width: 80%;
         padding: 0em;
@@ -932,7 +933,7 @@ body {
     }
 }
 
-@media screen and (max-width:31.25rem) {
+@media screen and (max-width:500px) {
     .Header{
         padding:5%;
     }
@@ -1028,7 +1029,7 @@ body.dark {
 #cont--abrir.dark>h3:hover {
     color: #ffffffbe;
     border-color: #ffffffbe;
-    font-size: 1.75rem;
+    font-size: 28px;
 }
 
 /*html, body {
