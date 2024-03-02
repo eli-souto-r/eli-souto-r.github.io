@@ -58,9 +58,9 @@ figure {
     /* opcional */
     -o-object-fit: cover;
     object-fit: cover;
-    /* opcional 
+    /* opcional */
     -o-object-position: center center;
-    object-position: center center;*/
+    object-position: center center;
 }
 
 /* Reseteamos los enlaces para funcionar como cajas... */
@@ -158,12 +158,12 @@ td {
     border-spacing: 0;
 }
 
-/* Evitamos problemas con los SVG */
+/* Evitamos problemas con los SVG 
 svg {
     width: 100%;
     display: block;
     fill: currentColor;
-}
+}*/
 
 /* (Probándolo, no usar en producción) En el caso de añadir una  */
 /*p svg {
