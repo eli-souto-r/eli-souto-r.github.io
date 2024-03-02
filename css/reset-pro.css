@@ -158,12 +158,12 @@ td {
     border-spacing: 0;
 }
 
-/* Evitamos problemas con los SVG 
+/* Evitamos problemas con los SVG *meda va eror con posicionamiento absoluto**/
 svg {
     width: 100%;
-    display: block;
+    /*display: block;*/
     fill: currentColor;
-}*/
+}
 
 /* (Probándolo, no usar en producción) En el caso de añadir una  */
 /*p svg {
