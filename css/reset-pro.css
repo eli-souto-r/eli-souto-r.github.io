@@ -160,8 +160,8 @@ td {
 
 /* Evitamos problemas con los SVG *meda va eror con posicionamiento absoluto**/
 svg {
-    width: 100%;
-    /*display: block;*/
+    /*width: 100%;*/
+   display: block;
     fill: currentColor;
 }
 
