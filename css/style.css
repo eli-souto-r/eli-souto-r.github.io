@@ -1,7 +1,7 @@
 @import url(reset-pro.css);
 
 body {
-    font-stretch: ubuntu;
+    font-family: ubuntu;
     color: var(--color-text);
     font-size: var(--size-principal);
     transition: .3s ease all;

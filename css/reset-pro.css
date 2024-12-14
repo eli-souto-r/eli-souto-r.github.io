@@ -136,7 +136,7 @@ textarea,
 select,
 button,
 label {
-    font-family: inherit;
+    font-family: ;
     font-size: inherit;
     -webkit-hyphens: auto;
     -ms-hyphens: auto;
