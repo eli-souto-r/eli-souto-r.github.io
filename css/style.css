@@ -528,12 +528,12 @@ body {
     width: cal(100% / 4);
     height: 100%;
 }
-.carruseles_4{
+.carruseles_4, .carruseles_7{
     width: 700%;
     height: 100%;
     display: flex;
 }
-.slider-section_4{
+.slider-section_4, .slider-section_7{
     width: cal(100% / 7);
     height: 100%;
 }
