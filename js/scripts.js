@@ -63,7 +63,8 @@ const btnLeft = document.querySelector(".btn-left"),
     sliderSection3 = document.querySelectorAll(".slider-section_3"),
     sliderSection4 = document.querySelectorAll(".slider-section_4"),
     sliderSection5 = document.querySelectorAll(".slider-section_5"),
-    sliderSection6 = document.querySelectorAll(".slider-section_6");
+    sliderSection6 = document.querySelectorAll(".slider-section_6"),
+    sliderSection7 = document.querySelectorAll(".slider-section_7");
 
 btnLeft.addEventListener("click", e => moveToLeft())
 btnRight.addEventListener("click", e => moveToRight())
@@ -75,7 +76,8 @@ let operacion = 0,
     widthIm3 = 100 / sliderSection3.length,
     widthIm4 = 100 / sliderSection4.length,
     widthIm5 = 100 / sliderSection5.length,
-    widthIm6 = 100 / sliderSection6.length;
+    widthIm6 = 100 / sliderSection6.length,
+    widthIm7 = 100 / sliderSection7.length;
 
 // Función para manejar el movimiento de los sliders
 function moveSlider(slider, counter, widthIm) {
@@ -165,7 +167,7 @@ const proyect1 = document.querySelector(".body-carusel_1"),
     proyect4 = document.querySelector(".body-carusel_4"),
     proyect5 = document.querySelector(".body-carusel_5"),
     proyect6 = document.querySelector(".body-carusel_6"),
-    proyect6 = document.querySelector(".body-carusel_7"),
+    proyect7 = document.querySelector(".body-carusel_7"),
     
     proyecto1Img = document.querySelector("#proyecto-div_1"),
     proyecto2Img = document.querySelector("#proyecto-div_2"),
@@ -173,7 +175,7 @@ const proyect1 = document.querySelector(".body-carusel_1"),
     proyecto4Img = document.querySelector("#proyecto-div_4"),
     proyecto5Img = document.querySelector("#proyecto-div_5"),
     proyecto6Img = document.querySelector("#proyecto-div_6"),
-    proyecto6Img = document.querySelector("#proyecto-div_7");
+    proyecto7Img = document.querySelector("#proyecto-div_7");
 
     proyecto1Img.addEventListener("click", e => activeProyect1())
     proyecto2Img.addEventListener("click", e => activeProyect2())
@@ -181,7 +183,7 @@ const proyect1 = document.querySelector(".body-carusel_1"),
     proyecto4Img.addEventListener("click", e => activeProyect4())
     proyecto5Img.addEventListener("click", e => activeProyect5())
     proyecto6Img.addEventListener("click", e => activeProyect6())
-    proyecto6Img.addEventListener("click", e => activeProyect7())
+    proyecto7Img.addEventListener("click", e => activeProyect7())
 
     function activeProyect1() {
         proyect1.style.display = 'flex';
