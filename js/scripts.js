@@ -77,7 +77,7 @@ let operacion = 0,
     widthIm4 = 100 / sliderSection4.length,
     widthIm5 = 100 / sliderSection5.length,
     widthIm6 = 100 / sliderSection6.length,
-    widthIm7 = 100 / sliderSection7.length;
+    widthIm7 = 100 / sliderSection7.length,
 
 // Función para manejar el movimiento de los sliders
 function moveSlider(slider, counter, widthIm) {
