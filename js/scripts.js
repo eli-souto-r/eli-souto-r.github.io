@@ -149,6 +149,13 @@ initializeSlider(
     document.querySelectorAll(".body-carusel_6 .slider-section_6")
 );
 
+initializeSlider(
+    document.querySelector(".body-carusel_7 .btn-left"),
+    document.querySelector(".body-carusel_7 .btn-right"),
+    document.querySelector(".body-carusel_7 .slider"),
+    document.querySelectorAll(".body-carusel_7 .slider-section_7")
+);
+
 
 //Desplegar Slider proyectos
 
@@ -158,13 +165,15 @@ const proyect1 = document.querySelector(".body-carusel_1"),
     proyect4 = document.querySelector(".body-carusel_4"),
     proyect5 = document.querySelector(".body-carusel_5"),
     proyect6 = document.querySelector(".body-carusel_6"),
+    proyect6 = document.querySelector(".body-carusel_7"),
     
     proyecto1Img = document.querySelector("#proyecto-div_1"),
     proyecto2Img = document.querySelector("#proyecto-div_2"),
     proyecto3Img = document.querySelector("#proyecto-div_3"),
     proyecto4Img = document.querySelector("#proyecto-div_4"),
     proyecto5Img = document.querySelector("#proyecto-div_5"),
-    proyecto6Img = document.querySelector("#proyecto-div_6");
+    proyecto6Img = document.querySelector("#proyecto-div_6"),
+    proyecto6Img = document.querySelector("#proyecto-div_7");
 
     proyecto1Img.addEventListener("click", e => activeProyect1())
     proyecto2Img.addEventListener("click", e => activeProyect2())
@@ -172,6 +181,7 @@ const proyect1 = document.querySelector(".body-carusel_1"),
     proyecto4Img.addEventListener("click", e => activeProyect4())
     proyecto5Img.addEventListener("click", e => activeProyect5())
     proyecto6Img.addEventListener("click", e => activeProyect6())
+    proyecto6Img.addEventListener("click", e => activeProyect7())
 
     function activeProyect1() {
         proyect1.style.display = 'flex';
@@ -244,7 +254,18 @@ const proyect1 = document.querySelector(".body-carusel_1"),
             }
         };
     }
+
+    function activeProyect7() {
+        proyect7.style.display = 'flex';
+        document.body.classList.add('no-scroll');
     
+        proyect7.onclick = function (e) {
+            if (e.target === proyect7) {
+                proyect7.style.display = 'none';
+                document.body.classList.remove('no-scroll');
+            }
+        };
+    }
 
 //botones popups
 
