@@ -64,7 +64,15 @@ const btnLeft = document.querySelector(".btn-left"),
     sliderSection4 = document.querySelectorAll(".slider-section_4"),
     sliderSection5 = document.querySelectorAll(".slider-section_5"),
     sliderSection6 = document.querySelectorAll(".slider-section_6"),
-    sliderSection7 = document.querySelectorAll(".slider-section_7");
+    sliderSection7 = document.querySelectorAll(".slider-section_7"),
+    sliderSection8 = document.querySelectorAll(".slider-section_8"),
+    sliderSection9 = document.querySelectorAll(".slider-section_9"),
+    sliderSection10 = document.querySelectorAll(".slider-section_10"),
+    sliderSection11 = document.querySelectorAll(".slider-section_11"),
+    sliderSection12 = document.querySelectorAll(".slider-section_12"),
+    sliderSection13 = document.querySelectorAll(".slider-section_13"),
+    sliderSection14 = document.querySelectorAll(".slider-section_14"),
+    sliderSection15 = document.querySelectorAll(".slider-section_15");
 
 btnLeft.addEventListener("click", e => moveToLeft())
 btnRight.addEventListener("click", e => moveToRight())
@@ -77,7 +85,15 @@ let operacion = 0,
     widthIm4 = 100 / sliderSection4.length,
     widthIm5 = 100 / sliderSection5.length,
     widthIm6 = 100 / sliderSection6.length,
-    widthIm7 = 100 / sliderSection7.length;
+    widthIm7 = 100 / sliderSection7.length,
+    widthIm8 = 100 / sliderSection8.length,
+    widthIm9 = 100 / sliderSection9.length,
+    widthIm10 = 100 / sliderSection10.length,
+    widthIm11 = 100 / sliderSection11.length,
+    widthIm12 = 100 / sliderSection12.length,
+    widthIm13 = 100 / sliderSection13.length,
+    widthIm14 = 100 / sliderSection14.length,
+    widthIm15 = 100 / sliderSection15.length;
 
 // Función para manejar el movimiento de los sliders
 function moveSlider(slider, counter, widthIm) {
@@ -158,7 +174,61 @@ initializeSlider(
     document.querySelectorAll(".body-carusel_7 .slider-section_7")
 );
 
+initializeSlider(
+    document.querySelector(".body-carusel_8 .btn-left"),
+    document.querySelector(".body-carusel_8 .btn-right"),
+    document.querySelector(".body-carusel_8 .slider"),
+    document.querySelectorAll(".body-carusel_8 .slider-section_8")
+);
 
+initializeSlider(
+    document.querySelector(".body-carusel_9 .btn-left"),
+    document.querySelector(".body-carusel_9 .btn-right"),
+    document.querySelector(".body-carusel_9 .slider"),
+    document.querySelectorAll(".body-carusel_9 .slider-section_9")
+);
+
+initializeSlider(
+    document.querySelector(".body-carusel_10 .btn-left"),
+    document.querySelector(".body-carusel_10 .btn-right"),
+    document.querySelector(".body-carusel_10 .slider"),
+    document.querySelectorAll(".body-carusel_10 .slider-section_10")
+);
+
+initializeSlider(
+    document.querySelector(".body-carusel_11 .btn-left"),
+    document.querySelector(".body-carusel_11 .btn-right"),
+    document.querySelector(".body-carusel_11 .slider"),
+    document.querySelectorAll(".body-carusel_11 .slider-section_11")
+);
+
+initializeSlider(
+    document.querySelector(".body-carusel_12 .btn-left"),
+    document.querySelector(".body-carusel_12 .btn-right"),
+    document.querySelector(".body-carusel_12 .slider"),
+    document.querySelectorAll(".body-carusel_12 .slider-section_12")
+);
+
+initializeSlider(
+    document.querySelector(".body-carusel_13 .btn-left"),
+    document.querySelector(".body-carusel_13 .btn-right"),
+    document.querySelector(".body-carusel_13 .slider"),
+    document.querySelectorAll(".body-carusel_13 .slider-section_13")
+);
+
+initializeSlider(
+    document.querySelector(".body-carusel_14 .btn-left"),
+    document.querySelector(".body-carusel_14 .btn-right"),
+    document.querySelector(".body-carusel_14 .slider"),
+    document.querySelectorAll(".body-carusel_14 .slider-section_14")
+);
+
+initializeSlider(
+    document.querySelector(".body-carusel_15 .btn-left"),
+    document.querySelector(".body-carusel_15 .btn-right"),
+    document.querySelector(".body-carusel_15 .slider"),
+    document.querySelectorAll(".body-carusel_15 .slider-section_15")
+);
 //Desplegar Slider proyectos
 
 const proyect1 = document.querySelector(".body-carusel_1"),
@@ -168,6 +238,14 @@ const proyect1 = document.querySelector(".body-carusel_1"),
     proyect5 = document.querySelector(".body-carusel_5"),
     proyect6 = document.querySelector(".body-carusel_6"),
     proyect7 = document.querySelector(".body-carusel_7"),
+    proyect8 = document.querySelector(".body-carusel_8"),
+    proyect9 = document.querySelector(".body-carusel_9"),
+    proyect10 = document.querySelector(".body-carusel_10"),
+    proyect11 = document.querySelector(".body-carusel_11"),
+    proyect12 = document.querySelector(".body-carusel_12"),
+    proyect13 = document.querySelector(".body-carusel_13"),
+    proyect14 = document.querySelector(".body-carusel_14"),
+    proyect15 = document.querySelector(".body-carusel_15"),
     
     proyecto1Img = document.querySelector("#proyecto-div_1"),
     proyecto2Img = document.querySelector("#proyecto-div_2"),
@@ -175,8 +253,16 @@ const proyect1 = document.querySelector(".body-carusel_1"),
     proyecto4Img = document.querySelector("#proyecto-div_4"),
     proyecto5Img = document.querySelector("#proyecto-div_5"),
     proyecto6Img = document.querySelector("#proyecto-div_6"),
-    proyecto7Img = document.querySelector("#proyecto-div_7");
-
+    proyecto7Img = document.querySelector("#proyecto-div_7"),
+    proyecto8Img = document.querySelector("#proyecto-div_8"),
+    proyecto9Img = document.querySelector("#proyecto-div_9"),
+    proyecto10Img = document.querySelector("#proyecto-div_10"),
+    proyecto11Img = document.querySelector("#proyecto-div_11"),
+    proyecto12Img = document.querySelector("#proyecto-div_12"),
+    proyecto13Img = document.querySelector("#proyecto-div_13"),
+    proyecto14Img = document.querySelector("#proyecto-div_14"),
+    proyecto15Img = document.querySelector("#proyecto-div_15");
+    
     proyecto1Img.addEventListener("click", e => activeProyect1())
     proyecto2Img.addEventListener("click", e => activeProyect2())
     proyecto3Img.addEventListener("click", e => activeProyect3())
@@ -184,7 +270,15 @@ const proyect1 = document.querySelector(".body-carusel_1"),
     proyecto5Img.addEventListener("click", e => activeProyect5())
     proyecto6Img.addEventListener("click", e => activeProyect6())
     proyecto7Img.addEventListener("click", e => activeProyect7())
-
+    proyecto8Img.addEventListener("click", e => activeProyect8())
+    proyecto9Img.addEventListener("click", e => activeProyect9())
+    proyecto10Img.addEventListener("click", e => activeProyect10())
+    proyecto11Img.addEventListener("click", e => activeProyect11())
+    proyecto12Img.addEventListener("click", e => activeProyect12())
+    proyecto13Img.addEventListener("click", e => activeProyect13())
+    proyecto14Img.addEventListener("click", e => activeProyect14())
+    proyecto15Img.addEventListener("click", e => activeProyect15())
+    
     function activeProyect1() {
         proyect1.style.display = 'flex';
         document.body.classList.add('no-scroll');
@@ -264,6 +358,102 @@ const proyect1 = document.querySelector(".body-carusel_1"),
         proyect7.onclick = function (e) {
             if (e.target === proyect7) {
                 proyect7.style.display = 'none';
+                document.body.classList.remove('no-scroll');
+            }
+        };
+    }
+
+    function activeProyect8() {
+        proyect8.style.display = 'flex';
+        document.body.classList.add('no-scroll');
+    
+        proyect8.onclick = function (e) {
+            if (e.target === proyect8) {
+                proyect8.style.display = 'none';
+                document.body.classList.remove('no-scroll');
+            }
+        };
+    }
+
+    function activeProyect9() {
+        proyect9.style.display = 'flex';
+        document.body.classList.add('no-scroll');
+    
+        proyect9.onclick = function (e) {
+            if (e.target === proyect9) {
+                proyect9.style.display = 'none';
+                document.body.classList.remove('no-scroll');
+            }
+        };
+    }
+
+    function activeProyect10() {
+        proyect10.style.display = 'flex';
+        document.body.classList.add('no-scroll');
+    
+        proyect10.onclick = function (e) {
+            if (e.target === proyect10) {
+                proyect10.style.display = 'none';
+                document.body.classList.remove('no-scroll');
+            }
+        };
+    }
+
+    function activeProyect11() {
+        proyect11.style.display = 'flex';
+        document.body.classList.add('no-scroll');
+    
+        proyect11.onclick = function (e) {
+            if (e.target === proyect11) {
+                proyect11.style.display = 'none';
+                document.body.classList.remove('no-scroll');
+            }
+        };
+    }
+
+    function activeProyect12() {
+        proyect12.style.display = 'flex';
+        document.body.classList.add('no-scroll');
+    
+        proyect12.onclick = function (e) {
+            if (e.target === proyect12) {
+                proyect12.style.display = 'none';
+                document.body.classList.remove('no-scroll');
+            }
+        };
+    }
+
+    function activeProyect13() {
+        proyect13.style.display = 'flex';
+        document.body.classList.add('no-scroll');
+    
+        proyect13.onclick = function (e) {
+            if (e.target === proyect13) {
+                proyect13.style.display = 'none';
+                document.body.classList.remove('no-scroll');
+            }
+        };
+    }
+
+    function activeProyect14() {
+        proyect14.style.display = 'flex';
+        document.body.classList.add('no-scroll');
+    
+        proyect14.onclick = function (e) {
+            if (e.target === proyect14) {
+                proyect14.style.display = 'none';
+                document.body.classList.remove('no-scroll');
+            }
+        };
+    }
+
+    function activeProyect15() {
+        proyect15.style.display = 'flex';
+        document.body.classList.add('no-scroll');
+    
+        proyect15.onclick = function (e) {
+            if (e.target === proyect15) {
+                proyect15.style.display = 'none';
                 document.body.classList.remove('no-scroll');
             }
         };
