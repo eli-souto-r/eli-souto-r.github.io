@@ -461,54 +461,45 @@ const proyect1 = document.querySelector(".body-carusel_1"),
 
 
 
+//botones popups
+const popupPDF = document.querySelector(".popup-pdf"),
+    btnMIC = document.querySelector(".btn-mic"),
+    popupDiario = document.querySelector(".popup-diario"),
+    btnDiario = document.querySelector(".btn-diario");
+
+btnMIC.addEventListener("click", e => activePopup1());
+btnDiario.addEventListener("click", e => activePopup2());
+
+
 // POPUPS DE VÍDEO
-(function () {
+const botonesVideo = document.querySelectorAll(".btn-video");
+const popupsVideo = document.querySelectorAll(".popup-video");
 
-    const botonesVideo = document.querySelectorAll(".btn-video");
-    const popupsVideo = document.querySelectorAll(".popup-video");
+botonesVideo.forEach((boton, index) => {
 
-    if (!botonesVideo.length || !popupsVideo.length) {
-        return;
-    }
+    boton.addEventListener("click", function(e) {
+        e.preventDefault();
+        e.stopPropagation();
 
-    // Abrir cualquiera de los popups de vídeo
-    botonesVideo.forEach(function (boton, index) {
+        const popup = popupsVideo[index];
 
-        boton.addEventListener("click", function (e) {
+        if (!popup) return;
 
-            e.preventDefault();
-            e.stopPropagation();
+        popup.style.display = "flex";
+        document.body.classList.add("no-scroll");
+    });
 
-            // Ocultar todos los popups de vídeo
-            popupsVideo.forEach(function (popup) {
-                popup.style.setProperty("display", "none", "important");
-            });
+});
 
-            // Abrir el popup correspondiente
-            if (popupsVideo[index]) {
-                popupsVideo[index].style.setProperty("display", "flex", "important");
-            }
+popupsVideo.forEach((popup) => {
 
-            document.body.classList.add("no-scroll");
-        });
+    popup.addEventListener("click", function(e) {
+
+        if (e.target === popup) {
+            popup.style.display = "none";
+            document.body.classList.remove("no-scroll");
+        }
 
     });
 
-
-    // Cerrar los popups haciendo clic en el fondo
-    popupsVideo.forEach(function (popup) {
-
-        popup.addEventListener("click", function (e) {
-
-            if (e.target === popup) {
-
-                popup.style.setProperty("display", "none", "important");
-                document.body.classList.remove("no-scroll");
-
-            }
-
-        });
-
-    });
-
-})();
+});
