@@ -243,9 +243,7 @@ const proyect1 = document.querySelector(".body-carusel_1"),
     proyect10 = document.querySelector(".body-carusel_10"),
     proyect11 = document.querySelector(".body-carusel_11"),
     proyect12 = document.querySelector(".body-carusel_12"),
-    proyect13 = document.querySelector(".body-carusel_13"),
-    proyect14 = document.querySelector(".body-carusel_14"),
-    proyect15 = document.querySelector(".body-carusel_15"),
+
     
     proyecto1Img = document.querySelector("#proyecto-div_1"),
     proyecto2Img = document.querySelector("#proyecto-div_2"),
@@ -258,10 +256,8 @@ const proyect1 = document.querySelector(".body-carusel_1"),
     proyecto9Img = document.querySelector("#proyecto-div_9"),
     proyecto10Img = document.querySelector("#proyecto-div_10"),
     proyecto11Img = document.querySelector("#proyecto-div_11"),
-    proyecto12Img = document.querySelector("#proyecto-div_12"),
-    proyecto13Img = document.querySelector("#proyecto-div_13"),
-    proyecto14Img = document.querySelector("#proyecto-div_14"),
-    proyecto15Img = document.querySelector("#proyecto-div_15");
+    proyecto12Img = document.querySelector("#proyecto-div_12");
+
     
     proyecto1Img.addEventListener("click", e => activeProyect1())
     proyecto2Img.addEventListener("click", e => activeProyect2())
@@ -275,10 +271,7 @@ const proyect1 = document.querySelector(".body-carusel_1"),
     proyecto10Img.addEventListener("click", e => activeProyect10())
     proyecto11Img.addEventListener("click", e => activeProyect11())
     proyecto12Img.addEventListener("click", e => activeProyect12())
-    proyecto13Img.addEventListener("click", e => activeProyect13())
-    proyecto14Img.addEventListener("click", e => activeProyect14())
-    proyecto15Img.addEventListener("click", e => activeProyect15())
-    
+
     function activeProyect1() {
         proyect1.style.display = 'flex';
         document.body.classList.add('no-scroll');
@@ -423,41 +416,6 @@ const proyect1 = document.querySelector(".body-carusel_1"),
         };
     }
 
-    function activeProyect13() {
-        proyect13.style.display = 'flex';
-        document.body.classList.add('no-scroll');
-    
-        proyect13.onclick = function (e) {
-            if (e.target === proyect13) {
-                proyect13.style.display = 'none';
-                document.body.classList.remove('no-scroll');
-            }
-        };
-    }
-
-    function activeProyect14() {
-        proyect14.style.display = 'flex';
-        document.body.classList.add('no-scroll');
-    
-        proyect14.onclick = function (e) {
-            if (e.target === proyect14) {
-                proyect14.style.display = 'none';
-                document.body.classList.remove('no-scroll');
-            }
-        };
-    }
-
-    function activeProyect15() {
-        proyect15.style.display = 'flex';
-        document.body.classList.add('no-scroll');
-    
-        proyect15.onclick = function (e) {
-            if (e.target === proyect15) {
-                proyect15.style.display = 'none';
-                document.body.classList.remove('no-scroll');
-            }
-        };
-    }
 
 //botones popups
 
