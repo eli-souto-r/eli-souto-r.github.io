@@ -459,11 +459,8 @@ const proyect1 = document.querySelector(".body-carusel_1"),
         };
     }
 
-const popupPDF = document.querySelector(".popup-pdf");
-const btnMIC = document.querySelector(".btn-mic");
 
-const popupDiario = document.querySelector(".popup-diario");
-const btnDiario = document.querySelector(".btn-diario");
+// BOTONES POPUPS DE VÍDEO
 
 const popupVideo = document.querySelector(".popup-video");
 const btnVideo = document.querySelector(".btn-video");
@@ -484,26 +481,36 @@ const popupVideo6 = document.querySelector(".popup-video6");
 const btnVideo6 = document.querySelector(".btn-video6");
 
 
-function abrirPopup(boton, popup) {
+// FUNCIÓN GENERAL PARA ABRIR Y CERRAR LOS POPUPS
+
+function activarPopup(boton, popup) {
+
+    // Si el botón o el popup no existen, no hacemos nada
+    // y evitamos que se rompa todo el JavaScript.
     if (!boton || !popup) return;
 
-    boton.addEventListener("click", () => {
+    boton.addEventListener("click", function () {
+
         popup.style.display = "flex";
         document.body.classList.add("no-scroll");
 
-        popup.onclick = () => {
-            popup.style.display = "none";
-            document.body.classList.remove("no-scroll");
-        };
+    });
+
+    popup.addEventListener("click", function () {
+
+        popup.style.display = "none";
+        document.body.classList.remove("no-scroll");
+
     });
 }
 
 
-abrirPopup(btnMIC, popupPDF);
-abrirPopup(btnDiario, popupDiario);
-abrirPopup(btnVideo, popupVideo);
-abrirPopup(btnVideo2, popupVideo2);
-abrirPopup(btnVideo3, popupVideo3);
-abrirPopup(btnVideo4, popupVideo4);
-abrirPopup(btnVideo5, popupVideo5);
-abrirPopup(btnVideo6, popupVideo6);
+// ACTIVAR LOS POPUPS
+
+activarPopup(btnVideo, popupVideo);
+activarPopup(btnVideo2, popupVideo2);
+activarPopup(btnVideo3, popupVideo3);
+activarPopup(btnVideo4, popupVideo4);
+activarPopup(btnVideo5, popupVideo5);
+activarPopup(btnVideo6, popupVideo6);
+```
