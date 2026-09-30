@@ -466,6 +466,10 @@ const popupPDF = document.querySelector(".popup-pdf"),
     popupDiario = document.querySelector(".popup-diario"),
     popupVideo = document.querySelector(".popup-video"),
     btnVideo = document.querySelector(".btn-video"),
+    popupVideo = document.querySelector(".popup-video"),
+    btnVideo = document.querySelector(".btn-video"),
+    popupVideo = document.querySelector(".popup-video"),
+    btnVideo = document.querySelector(".btn-video"),
     btnDiario = document.querySelector(".btn-diario");
 
     btnMIC.addEventListener("click", e => activePopup1())
