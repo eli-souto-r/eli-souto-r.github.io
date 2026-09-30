@@ -459,61 +459,28 @@ const proyect1 = document.querySelector(".body-carusel_1"),
         };
     }
 
+//botones popups
+
+const popupPDF = document.querySelector(".popup-pdf"),
+    btnMIC = document.querySelector(".btn-mic"),
+    popupDiario = document.querySelector(".popup-diario"),
+    popupVideo = document.querySelector(".popup-video"),
+    btnVideo = document.querySelector(".btn-video"),
+    btnDiario = document.querySelector(".btn-diario");
+
+    btnMIC.addEventListener("click", e => activePopup1())
+    btnDiario.addEventListener("click", e => activePopup2())
+    btnVideo.addEventListener("click", e => activePopup3())
 
 
-// BOTONES POPUPS DE VÍDEO
+    function activePopup3() {
+        popupVideo.style.display = 'flex';
+        document.body.classList.add('no-scroll');
+    
+        popupVideo.onclick = function () {
+                popupVideo.style.display = 'none';
+                document.body.classList.remove('no-scroll');
+            
+        };
 
-const popupVideo = document.querySelector(".popup-video");
-const btnVideo = document.querySelector(".btn-video");
-
-const popupVideo2 = document.querySelector(".popup-video2");
-const btnVideo2 = document.querySelector(".btn-video2");
-
-const popupVideo3 = document.querySelector(".popup-video3");
-const btnVideo3 = document.querySelector(".btn-video3");
-
-const popupVideo4 = document.querySelector(".popup-video4");
-const btnVideo4 = document.querySelector(".btn-video4");
-
-const popupVideo5 = document.querySelector(".popup-video5");
-const btnVideo5 = document.querySelector(".btn-video5");
-
-const popupVideo6 = document.querySelector(".popup-video6");
-const btnVideo6 = document.querySelector(".btn-video6");
-
-
-// FUNCIÓN GENERAL PARA ABRIR Y CERRAR LOS POPUPS
-
-function activarPopup(boton, popup) {
-
-    // Si el botón o el popup no existen, no hacemos nada
-    // y evitamos que se rompa todo el JavaScript.
-    if (!boton || !popup) return;
-
-    boton.addEventListener("click", function () {
-
-        popup.style.display = "flex";
-        document.body.classList.add("no-scroll");
-
-    });
-
-    popup.addEventListener("click", function () {
-
-        popup.style.display = "none";
-        document.body.classList.remove("no-scroll");
-
-    });
-}
-
-
-// ACTIVAR LOS POPUPS
-
-activarPopup(btnVideo, popupVideo);
-activarPopup(btnVideo2, popupVideo2);
-activarPopup(btnVideo3, popupVideo3);
-activarPopup(btnVideo4, popupVideo4);
-activarPopup(btnVideo5, popupVideo5);
-activarPopup(btnVideo6, popupVideo6);
-
-
-
+    }
