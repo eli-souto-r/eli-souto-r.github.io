@@ -459,99 +459,51 @@ const proyect1 = document.querySelector(".body-carusel_1"),
         };
     }
 
-//botones popups
+const popupPDF = document.querySelector(".popup-pdf");
+const btnMIC = document.querySelector(".btn-mic");
 
-const popupPDF = document.querySelector(".popup-pdf"),
-    btnMIC = document.querySelector(".btn-mic"),
-    popupDiario = document.querySelector(".popup-diario"),
-    popupVideo = document.querySelector(".popup-video"),
-    btnVideo = document.querySelector(".btn-video"),
-    popupVideo2 = document.querySelector(".popup-video2"),
-    btnVideo2 = document.querySelector(".btn-video2"),
-    popupVideo3 = document.querySelector(".popup-video3"),
-    btnVideo3 = document.querySelector(".btn-video3"),
-    popupVideo4 = document.querySelector(".popup-video4"),
-    btnVideo4 = document.querySelector(".btn-video4"),
-    popupVideo5 = document.querySelector(".popup-video5"),
-    btnVideo5= document.querySelector(".btn-video5"),
-    popupVideo6 = document.querySelector(".popup-video6"),
-    btnVideo6 = document.querySelector(".btn-video6"),
+const popupDiario = document.querySelector(".popup-diario");
+const btnDiario = document.querySelector(".btn-diario");
 
-    btnDiario = document.querySelector(".btn-diario");
+const popupVideo = document.querySelector(".popup-video");
+const btnVideo = document.querySelector(".btn-video");
 
-    btnMIC.addEventListener("click", e => activePopup1())
-    btnDiario.addEventListener("click", e => activePopup2())
-    btnVideo.addEventListener("click", e => activePopup3())
-    btnVideo2.addEventListener("click", e => activePopup4())
-    btnVideo3.addEventListener("click", e => activePopup5())
-    btnVideo4.addEventListener("click", e => activePopup6())
-    btnVideo5.addEventListener("click", e => activePopup7())
-    btnVideo6.addEventListener("click", e => activePopup8())
+const popupVideo2 = document.querySelector(".popup-video2");
+const btnVideo2 = document.querySelector(".btn-video2");
+
+const popupVideo3 = document.querySelector(".popup-video3");
+const btnVideo3 = document.querySelector(".btn-video3");
+
+const popupVideo4 = document.querySelector(".popup-video4");
+const btnVideo4 = document.querySelector(".btn-video4");
+
+const popupVideo5 = document.querySelector(".popup-video5");
+const btnVideo5 = document.querySelector(".btn-video5");
+
+const popupVideo6 = document.querySelector(".popup-video6");
+const btnVideo6 = document.querySelector(".btn-video6");
 
 
-    function activePopup3() {
-        popupVideo.style.display = 'flex';
-        document.body.classList.add('no-scroll');
-    
-        popupVideo.onclick = function () {
-                popupVideo.style.display = 'none';
-                document.body.classList.remove('no-scroll');
-            
+function abrirPopup(boton, popup) {
+    if (!boton || !popup) return;
+
+    boton.addEventListener("click", () => {
+        popup.style.display = "flex";
+        document.body.classList.add("no-scroll");
+
+        popup.onclick = () => {
+            popup.style.display = "none";
+            document.body.classList.remove("no-scroll");
         };
+    });
+}
 
-    }
-    function activePopup4() {
-        popupVideo2.style.display = 'flex';
-        document.body.classList.add('no-scroll');
-    
-        popupVideo2.onclick = function () {
-                popupVideo2.style.display = 'none';
-                document.body.classList.remove('no-scroll');
-            
-        };
 
-    }
-    function activePopup5() {
-        popupVideo3.style.display = 'flex';
-        document.body.classList.add('no-scroll');
-    
-        popupVideo3.onclick = function () {
-                popupVideo3.style.display = 'none';
-                document.body.classList.remove('no-scroll');
-            
-        };
-
-    }
-    function activePopup6() {
-        popupVideo4.style.display = 'flex';
-        document.body.classList.add('no-scroll');
-    
-        popupVideo4.onclick = function () {
-                popupVideo4.style.display = 'none';
-                document.body.classList.remove('no-scroll');
-            
-        };
-
-    }
-    function activePopup7() {
-        popupVideo5.style.display = 'flex';
-        document.body.classList.add('no-scroll');
-    
-        popupVideo5.onclick = function () {
-                popupVideo5.style.display = 'none';
-                document.body.classList.remove('no-scroll');
-            
-        };
-
-    }
-    function activePopup8() {
-        popupVideo6.style.display = 'flex';
-        document.body.classList.add('no-scroll');
-    
-        popupVideo6.onclick = function () {
-                popupVideo6.style.display = 'none';
-                document.body.classList.remove('no-scroll');
-            
-        };
-
-    }
+abrirPopup(btnMIC, popupPDF);
+abrirPopup(btnDiario, popupDiario);
+abrirPopup(btnVideo, popupVideo);
+abrirPopup(btnVideo2, popupVideo2);
+abrirPopup(btnVideo3, popupVideo3);
+abrirPopup(btnVideo4, popupVideo4);
+abrirPopup(btnVideo5, popupVideo5);
+abrirPopup(btnVideo6, popupVideo6);
