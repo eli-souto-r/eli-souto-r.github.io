@@ -459,28 +459,51 @@ const proyect1 = document.querySelector(".body-carusel_1"),
         };
     }
 
-//botones popups
+
+// Botones popups
 
 const popupPDF = document.querySelector(".popup-pdf"),
     btnMIC = document.querySelector(".btn-mic"),
     popupDiario = document.querySelector(".popup-diario"),
     popupVideo = document.querySelector(".popup-video"),
-    btnVideo = document.querySelector(".btn-video"),
     btnDiario = document.querySelector(".btn-diario");
 
-    btnMIC.addEventListener("click", e => activePopup1())
-    btnDiario.addEventListener("click", e => activePopup2())
-    btnVideo.addEventListener("click", e => activePopup3())
+
+// BOTÓN MIC
+if (btnMIC) {
+    btnMIC.addEventListener("click", e => activePopup1());
+}
 
 
-    function activePopup3() {
-        popupVideo.style.display = 'flex';
-        document.body.classList.add('no-scroll');
-    
-        popupVideo.onclick = function () {
-                popupVideo.style.display = 'none';
-                document.body.classList.remove('no-scroll');
-            
-        };
+// BOTÓN DIARIO
+if (btnDiario) {
+    btnDiario.addEventListener("click", e => activePopup2());
+}
 
-    }
+
+// BOTONES DE VÍDEO
+const btnVideos = document.querySelectorAll(".btn-video");
+
+btnVideos.forEach(btn => {
+    btn.addEventListener("click", function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        popupVideo.style.display = "flex";
+        document.body.classList.add("no-scroll");
+    });
+});
+
+
+// CERRAR POPUP DE VÍDEO
+if (popupVideo) {
+    popupVideo.addEventListener("click", function(e) {
+
+        // Solo cerrar si se pulsa sobre el fondo del popup
+        if (e.target === popupVideo) {
+            popupVideo.style.display = "none";
+            document.body.classList.remove("no-scroll");
+        }
+
+    });
+}
