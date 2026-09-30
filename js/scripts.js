@@ -475,6 +475,11 @@ const popupPDF = document.querySelector(".popup-pdf"),
     btnMIC.addEventListener("click", e => activePopup1())
     btnDiario.addEventListener("click", e => activePopup2())
     btnVideo.addEventListener("click", e => activePopup3())
+    btnVideo2.addEventListener("click", e => activePopup4())
+    btnVideo3.addEventListener("click", e => activePopup5())
+    btnVideo4.addEventListener("click", e => activePopup6())
+    btnVideo5.addEventListener("click", e => activePopup7())
+    btnVideo6.addEventListener("click", e => activePopup8())
 
 
     function activePopup3() {
@@ -483,6 +488,61 @@ const popupPDF = document.querySelector(".popup-pdf"),
     
         popupVideo.onclick = function () {
                 popupVideo.style.display = 'none';
+                document.body.classList.remove('no-scroll');
+            
+        };
+
+    }
+    function activePopup4() {
+        popupVideo2.style.display = 'flex';
+        document.body.classList.add('no-scroll');
+    
+        popupVideo2.onclick = function () {
+                popupVideo2.style.display = 'none';
+                document.body.classList.remove('no-scroll');
+            
+        };
+
+    }
+    function activePopup5() {
+        popupVideo3.style.display = 'flex';
+        document.body.classList.add('no-scroll');
+    
+        popupVideo3.onclick = function () {
+                popupVideo3.style.display = 'none';
+                document.body.classList.remove('no-scroll');
+            
+        };
+
+    }
+    function activePopup6() {
+        popupVideo4.style.display = 'flex';
+        document.body.classList.add('no-scroll');
+    
+        popupVideo4.onclick = function () {
+                popupVideo4.style.display = 'none';
+                document.body.classList.remove('no-scroll');
+            
+        };
+
+    }
+    function activePopup7() {
+        popupVideo5.style.display = 'flex';
+        document.body.classList.add('no-scroll');
+    
+        popupVideo5.onclick = function () {
+                popupVideo5.style.display = 'none';
+                document.body.classList.remove('no-scroll');
+            
+        };
+
+    }
+    function activePopup8() {
+        popupVideo6.style.display = 'flex';
+        document.body.classList.add('no-scroll');
+    
+        popupVideo6.onclick = function () {
+                popupVideo6.style.display = 'none';
                 document.body.classList.remove('no-scroll');
             
         };
