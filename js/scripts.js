@@ -460,7 +460,7 @@ const proyect1 = document.querySelector(".body-carusel_1"),
     }
 
 
-// BOTONES POPUPS DE VÍDEO
+// BOTONES Y POPUPS DE VÍDEO
 
 const popupVideo = document.querySelector(".popup-video");
 const btnVideo = document.querySelector(".btn-video");
@@ -477,18 +477,15 @@ const btnVideo4 = document.querySelector(".btn-video4");
 const popupVideo5 = document.querySelector(".popup-video5");
 const btnVideo5 = document.querySelector(".btn-video5");
 
-const popupVideo6 = document.querySelector(".popup-video6");
-const btnVideo6 = document.querySelector(".btn-video6");
 
-
-// FUNCIÓN GENERAL PARA ABRIR Y CERRAR LOS POPUPS
+// FUNCIÓN PARA ACTIVAR CADA POPUP
 
 function activarPopup(boton, popup) {
 
-    // Si el botón o el popup no existen, no hacemos nada
-    // y evitamos que se rompa todo el JavaScript.
+    // Si falta el botón o el popup, no rompe el resto del código
     if (!boton || !popup) return;
 
+    // ABRIR POPUP
     boton.addEventListener("click", function () {
 
         popup.style.display = "flex";
@@ -496,21 +493,26 @@ function activarPopup(boton, popup) {
 
     });
 
-    popup.addEventListener("click", function () {
+    // CERRAR POPUP AL PULSAR FUERA DEL CONTENIDO
+    popup.addEventListener("click", function (e) {
 
-        popup.style.display = "none";
-        document.body.classList.remove("no-scroll");
+        if (e.target === popup) {
+
+            popup.style.display = "none";
+            document.body.classList.remove("no-scroll");
+
+        }
 
     });
 }
 
 
-// ACTIVAR LOS POPUPS
+// ACTIVAR LOS 5 POPUPS
 
 activarPopup(btnVideo, popupVideo);
 activarPopup(btnVideo2, popupVideo2);
 activarPopup(btnVideo3, popupVideo3);
 activarPopup(btnVideo4, popupVideo4);
 activarPopup(btnVideo5, popupVideo5);
-activarPopup(btnVideo6, popupVideo6);
+
 
