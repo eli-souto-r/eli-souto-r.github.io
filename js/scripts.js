@@ -461,28 +461,45 @@ const proyect1 = document.querySelector(".body-carusel_1"),
 
 
 
-// PRUEBA POPUPS DE VÍDEO
-document.addEventListener("click", function(e) {
+//botones popups
+const popupPDF = document.querySelector(".popup-pdf"),
+    btnMIC = document.querySelector(".btn-mic"),
+    popupDiario = document.querySelector(".popup-diario"),
+    btnDiario = document.querySelector(".btn-diario");
 
-    const boton = e.target.closest(".btn-video");
+btnMIC.addEventListener("click", e => activePopup1());
+btnDiario.addEventListener("click", e => activePopup2());
 
-    if (!boton) return;
 
-    console.log("SE HA PULSADO VIDEO");
+// POPUPS DE VÍDEO
+const botonesVideo = document.querySelectorAll(".btn-video");
+const popupsVideo = document.querySelectorAll(".popup-video");
 
-    const popups = document.querySelectorAll(".popup-video");
+botonesVideo.forEach((boton, index) => {
 
-    console.log("POPUPS ENCONTRADOS:", popups.length);
+    boton.addEventListener("click", function(e) {
+        e.preventDefault();
+        e.stopPropagation();
 
-    if (popups.length === 0) {
-        console.log("NO SE ENCUENTRA NINGÚN POPUP-VIDEO");
-        return;
-    }
+        const popup = popupsVideo[index];
 
-    // Para la prueba: mostrar el primer popup
-    popups[0].style.setProperty("display", "flex", "important");
+        if (!popup) return;
 
-    console.log("DISPLAY APLICADO:", popups[0].style.display);
+        popup.style.display = "flex";
+        document.body.classList.add("no-scroll");
+    });
 
-    document.body.classList.add("no-scroll");
+});
+
+popupsVideo.forEach((popup) => {
+
+    popup.addEventListener("click", function(e) {
+
+        if (e.target === popup) {
+            popup.style.display = "none";
+            document.body.classList.remove("no-scroll");
+        }
+
+    });
+
 });
