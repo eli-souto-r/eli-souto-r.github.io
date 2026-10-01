@@ -461,45 +461,28 @@ const proyect1 = document.querySelector(".body-carusel_1"),
 
 
 
-//botones popups
-const popupPDF = document.querySelector(".popup-pdf"),
-    btnMIC = document.querySelector(".btn-mic"),
-    popupDiario = document.querySelector(".popup-diario"),
-    btnDiario = document.querySelector(".btn-diario");
+// PRUEBA POPUPS DE VÍDEO
+document.addEventListener("click", function(e) {
 
-btnMIC.addEventListener("click", e => activePopup1());
-btnDiario.addEventListener("click", e => activePopup2());
+    const boton = e.target.closest(".btn-video");
 
+    if (!boton) return;
 
-// POPUPS DE VÍDEO
-const botonesVideo = document.querySelectorAll(".btn-video");
-const popupsVideo = document.querySelectorAll(".popup-video");
+    console.log("SE HA PULSADO VIDEO");
 
-botonesVideo.forEach((boton, index) => {
+    const popups = document.querySelectorAll(".popup-video");
 
-    boton.addEventListener("click", function(e) {
-        e.preventDefault();
-        e.stopPropagation();
+    console.log("POPUPS ENCONTRADOS:", popups.length);
 
-        const popup = popupsVideo[index];
+    if (popups.length === 0) {
+        console.log("NO SE ENCUENTRA NINGÚN POPUP-VIDEO");
+        return;
+    }
 
-        if (!popup) return;
+    // Para la prueba: mostrar el primer popup
+    popups[0].style.setProperty("display", "flex", "important");
 
-        popup.style.display = "flex";
-        document.body.classList.add("no-scroll");
-    });
+    console.log("DISPLAY APLICADO:", popups[0].style.display);
 
-});
-
-popupsVideo.forEach((popup) => {
-
-    popup.addEventListener("click", function(e) {
-
-        if (e.target === popup) {
-            popup.style.display = "none";
-            document.body.classList.remove("no-scroll");
-        }
-
-    });
-
+    document.body.classList.add("no-scroll");
 });
