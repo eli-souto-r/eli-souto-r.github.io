@@ -275,7 +275,9 @@ const proyect1 = document.querySelector(".body-carusel_1"),
     proyecto10Img.addEventListener("click", e => activeProyect10())
     proyecto11Img.addEventListener("click", e => activeProyect11())
     proyecto12Img.addEventListener("click", e => activeProyect12())
-    proyecto13Img.addEventListener("click", e => activeProyect13())
+    if (proyecto13Img) {
+    proyecto13Img.addEventListener("click", e => activeProyect13());
+}
     proyecto14Img.addEventListener("click", e => activeProyect14())
     proyecto15Img.addEventListener("click", e => activeProyect15())
     
