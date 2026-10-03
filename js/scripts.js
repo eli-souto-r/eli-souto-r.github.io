@@ -499,8 +499,8 @@ popupsVideo.forEach((popup) => {
 
         if (e.target === popup) {
             popup.style.display = "none";
-            proyectoVideo.pause();
-            proyectoVideo.currentTime = 0;
+            popup.pause();
+            popup.currentTime = 0;
             document.body.classList.remove("no-scroll");
         }
 
