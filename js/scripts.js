@@ -493,15 +493,23 @@ botonesVideo.forEach((boton, index) => {
 
 });
 
-popupsVideo.forEach((popup) => {
 
-    popup.addEventListener("click", function(e) {
+if (popupVideo) {
 
-        if (e.target === popup) {
-            popup.style.display = "none";
+    popupVideo.addEventListener("click", function(e) {
+
+        if (e.target === popupVideo) {
+
+            popupVideo.style.display = "none";
+
+            proyectoVideo.pause();
+            proyectoVideo.currentTime = 0;
+
             document.body.classList.remove("no-scroll");
+
         }
 
     });
 
-});
+}
+
