@@ -474,12 +474,14 @@ btnDiario.addEventListener("click", e => activePopup2());
 
 
 // POPUPS DE VÍDEO
+
 const botonesVideo = document.querySelectorAll(".btn-video");
 const popupsVideo = document.querySelectorAll(".popup-video");
 
 botonesVideo.forEach((boton, index) => {
 
     boton.addEventListener("click", function(e) {
+
         e.preventDefault();
         e.stopPropagation();
 
@@ -489,6 +491,7 @@ botonesVideo.forEach((boton, index) => {
 
         popup.style.display = "flex";
         document.body.classList.add("no-scroll");
+
     });
 
 });
@@ -498,9 +501,16 @@ popupsVideo.forEach((popup) => {
     popup.addEventListener("click", function(e) {
 
         if (e.target === popup) {
+
+            const video = popup.querySelector("video");
+
             popup.style.display = "none";
-            popup.pause();
-            popup.currentTime = 0;
+
+            if (video) {
+                video.pause();
+                video.currentTime = 0;
+            }
+
             document.body.classList.remove("no-scroll");
         }
 
