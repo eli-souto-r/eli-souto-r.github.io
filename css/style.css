@@ -331,7 +331,10 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
 }
-
+.Aptitudes-img{
+    justify-content: center;
+    max-width: 80%;
+}
 .Aptitudes-block {
     display: flex;
     justify-content: center;
