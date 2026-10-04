@@ -577,7 +577,7 @@ body {
     object-fit: cover;
     border-radius: 2em;
 }
-.btn-left, .btn-right{
+.btn-left img, .btn-right img{
     display: flex;
     position: absolute;
     top: 50%;
