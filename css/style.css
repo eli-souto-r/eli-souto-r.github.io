@@ -339,7 +339,9 @@ body {
     align-items: center;
     margin-top: 2em;
 }
-
+.Aptitudes-img{
+    min-width: 100%;
+}
 .Aptitudes-h4 {
     margin: 2.18em 0em 0.9em 0em;
     text-align: center;
