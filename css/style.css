@@ -579,7 +579,7 @@ body {
     object-fit: cover;
     border-radius: 2em;
 }
-.btn-left img, .btn-right img{
+/*.btn-left img, .btn-right img{
     display: flex;
     position: absolute;
     top: 50%;
@@ -593,7 +593,7 @@ body {
     transform: translate(0, -50%);
     transition: .5s ease;
     user-select: none;
-}
+}*/
 .btn-left:hover, .btn-right:hover{
     background-color: #ff0000c5;
     color: #d9d9d9c5;
