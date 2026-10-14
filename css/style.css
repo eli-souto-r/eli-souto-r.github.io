@@ -545,7 +545,7 @@ body {
     height: 100%;
 }
 
-/*Caruseles con mas imagenes*/
+/*Caruseles con mas imagenes
 .carruseles_2, .carruseles_1{
     width: 400%;
     height: 100%;
@@ -572,14 +572,14 @@ body {
 .slider-section_6{
     width: cal(100% / 6);
     height: 100%;
-}
-/*Cierre caruseles con mas imagenes*/
+}*/
+/*Cierre caruseles con mas imagenes
 .slider-section img{
     width: 37.5rem;
     height: 100%;
     object-fit: cover;
     border-radius: 2em;
-}
+}*/
 
 /* Botones de navegación de los carruseles */
 .btn-left,
