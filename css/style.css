@@ -465,6 +465,7 @@ body {
     pointer-events: none;
     background-color: #fffdfd88;
     border-radius: 50%;
+    padding: 2rem;
 }
 
 /* Tamaño del icono SVG */
