@@ -457,14 +457,14 @@ body {
     right: 12px;
     bottom: 12px;
     z-index: 5;
-
     display: flex !important;
     align-items: center;
     justify-content: center;
-
     opacity: 1 !important;
     visibility: visible !important;
     pointer-events: none;
+    background-color: #fffdfd88;
+    border-radius: 50%;
 }
 
 /* Tamaño del icono SVG */
@@ -474,7 +474,6 @@ body {
     height: 32px;
     object-fit: contain;
 }
-```
 /*Quita estilos env los que no tienen interacion img*/
 .Proyecto-div-web_3:hover{
     scale: 100%;
