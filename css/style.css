@@ -465,14 +465,14 @@ body {
     pointer-events: none;
     background-color: #fffdfdc0;
     border-radius: 50%;
-    padding: .25rem;
+    padding: .28rem;
 }
 
 /* Tamaño del icono SVG */
 .Proyectos-div .Proyectos-icono img {
     display: block;
-    width: 32px;
-    height: 32px;
+    width: 30px;
+    height: 30px;
     object-fit:scale-down ;
 }
 /*Quita estilos env los que no tienen interacion img*/
@@ -484,6 +484,7 @@ body {
 /*--------modificado-------------*/
 .Proyectos-img{
     width: 500em;
+    height:100%;
     object-fit: cover;
 }
 
@@ -535,7 +536,7 @@ body {
 .container-carousel {
     position: relative;
     width: min(37.5rem, 100%);
-    height: min(31.25rem, 85vh);
+    height: min(31.25rem,65vh);
     box-shadow: 0 0 2em var(--color-principal);
     border-radius: 2rem;
     overflow: hidden;
