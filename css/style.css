@@ -472,7 +472,7 @@ body {
 .Proyectos-div .Proyectos-icono img {
     display: block;
     width: 32px;
-    height: auto;
+    height: 32px;
     object-fit: cover;
 }
 /*Quita estilos env los que no tienen interacion img*/
@@ -560,7 +560,7 @@ body {
 /* La imagen rellena toda la diapositiva */
 .slider-section img {
     display: block;
-    width: auto;
+    width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
