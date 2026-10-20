@@ -439,7 +439,7 @@ body {
     margin: .9em 0em 2em 0em;
     overflow: hidden;
     cursor: pointer;
-    object-fit: cover;
+    object-fit: contain;
 }
 .Proyectos-div:hover {
     scale: 105%;
@@ -481,10 +481,10 @@ body {
     box-shadow:none;
     cursor: auto;
 }
-/*---------------------*/
+/*--------modificado-------------*/
 .Proyectos-img{
     width: 500em;
-    object-fit: cover;
+    object-fit: scale-down;
 }
 
 .Proyectos-h4 {
@@ -635,7 +635,7 @@ Caruseles con mas imagenes
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
     border-radius: 2rem;
 }
