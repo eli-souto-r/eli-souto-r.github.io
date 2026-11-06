@@ -994,7 +994,11 @@ body {
     }
 }
 
-/*dark mode*/
+
+/* =========================================
+   MODO OSCURO
+   ========================================= */
+
 body.dark {
     background-color: var(--color-darkmod);
     color: #ffff;
@@ -1005,18 +1009,17 @@ body.dark {
     background-color: var(--color-darkmod);
 }
 
-
-#header.dark>nav>ul>li>a:hover {
+#header.dark > nav > ul > li > a:hover {
     color: var(--color-principal);
 }
 
-#redes.dark>a>svg,
-#redes--footer.dark>a>svg {
+#redes.dark > a > svg,
+#redes--footer.dark > a > svg {
     fill: #ffff;
 }
 
-#redes.dark>a>svg:hover,
-#redes--footer.dark>a>svg:hover {
+#redes.dark > a > svg:hover,
+#redes--footer.dark > a > svg:hover {
     fill: var(--color-principal);
 }
 
@@ -1024,41 +1027,46 @@ body.dark {
     border-color: var(--color-principal);
 }
 
-#luna.folse {
-    display: none;
-
-}
-
-#sol.active {
-    display: block;
-    float: right;
-}
-
 #logo.dark,
 #logo1.dark {
     fill: #ffff;
 }
 
-#block--contact.dark>form>input::placeholder,
-#block--contact.dark>form>textarea::placeholder {
+#block--contact.dark > form > input::placeholder,
+#block--contact.dark > form > textarea::placeholder {
     color: #ffff;
 }
 
-#block--contact.dark>button,
-#block--contact.dark>form>input,
-#block--contact.dark>form>textarea {
+#block--contact.dark > button,
+#block--contact.dark > form > input,
+#block--contact.dark > form > textarea {
     color: #ffff;
 }
 
-#block--contact.dark>button:hover {
+#block--contact.dark > button:hover {
     color: var(--color-principal);
 }
 
-#cont--abrir.dark>h3:hover {
+#cont--abrir.dark > h3:hover {
     color: #ffffffbe;
     border-color: #ffffffbe;
     font-size: 1.75rem;
 }
+
+/* =========================================
+   ICONOS DEL INTERRUPTOR
+   ========================================= */
+
+#luna,
+#sol {
+    display: none;
+}
+
+#luna.active,
+#sol.active {
+    display: block;
+}
+
 
 /*html, body {
     max-width: 100% !important;

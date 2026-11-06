@@ -20,6 +20,7 @@ const preferenciaSistema = window.matchMedia(
 );
 
 // Cambia el tema visual
+
 function aplicarTema(oscuro) {
 
     elementosDark.forEach(elemento => {
@@ -28,11 +29,18 @@ function aplicarTema(oscuro) {
         }
     });
 
-    // Modo oscuro: mostrar sol
-    // Modo claro: mostrar luna
-    if (sol) sol.classList.toggle('active', oscuro);
-    if (luna) luna.classList.toggle('active', !oscuro);
+    // En modo oscuro aparece el sol
+    // En modo claro aparece la luna
+
+    if (sol) {
+        sol.classList.toggle('active', oscuro);
+    }
+
+    if (luna) {
+        luna.classList.toggle('active', !oscuro);
+    }
 }
+
 
 // Detecta el tema según la preferencia del usuario
 function temaAutomatico() {
