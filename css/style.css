@@ -943,6 +943,7 @@ body {
         height: 100%;
         object-fit: cover;
         object-position: center;
+        object-position: 40% center;
 }
 
 @media screen and (max-width:44.25rem) {
