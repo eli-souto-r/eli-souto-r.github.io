@@ -28,6 +28,8 @@ function aplicarTema(oscuro) {
         }
     });
 
+    // Modo oscuro: mostrar sol
+    // Modo claro: mostrar luna
     if (sol) sol.classList.toggle('active', oscuro);
     if (luna) luna.classList.toggle('active', !oscuro);
 }
